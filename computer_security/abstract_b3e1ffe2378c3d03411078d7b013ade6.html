@@ -1,0 +1,1649 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="access" content="No">
+
+    
+    
+    <meta name="twitter:site" content="SpringerLink"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:image:alt" content="Content cover image"/>
+    <meta name="twitter:title" content="BitBlaze: A New Approach to Computer Security via Binary Analysis"/>
+    <meta name="twitter:description" content="In this paper, we give an overview of the BitBlaze project, a new approach to computer security via binary analysis. In particular, BitBlaze focuses on building a unified binary analysis platform and using it to provide novel solutions to a broad spectrum of..."/>
+    <meta name="twitter:image" content="https://static-content.springer.com/cover/book/978-3-540-89862-7.jpg"/>
+    <meta name="dc.identifier" content="10.1007/978-3-540-89862-7_1"/>
+    <meta name="DOI" content="10.1007/978-3-540-89862-7_1"/>
+    <meta name="dc.description" content="In this paper, we give an overview of the BitBlaze project, a new approach to computer security via binary analysis. In particular, BitBlaze focuses on building a unified binary analysis platform and using it to provide novel solutions to a broad spectrum of..."/>
+    <meta name="citation_pdf_url" content="https://link.springer.com/content/pdf/10.1007/978-3-540-89862-7_1.pdf"/>
+    <meta name="citation_fulltext_html_url" content="https://link.springer.com/chapter/10.1007/978-3-540-89862-7_1"/>
+    <meta name="citation_abstract_html_url" content="https://link.springer.com/chapter/10.1007/978-3-540-89862-7_1"/>
+    <meta name="citation_inbook_title" content="Information Systems Security"/>
+    <meta name="citation_title" content="BitBlaze: A New Approach to Computer Security via Binary Analysis"/>
+    <meta name="citation_publication_date" content="2008"/>
+    <meta name="citation_firstpage" content="1"/>
+    <meta name="citation_lastpage" content="25"/>
+    <meta name="citation_language" content="en"/>
+    <meta name="citation_doi" content="10.1007/978-3-540-89862-7_1"/>
+    <meta name="citation_conference_series_id" content="springer/iciss, dblp/iciss"/>
+    <meta name="citation_conference_title" content="International Conference on Information Systems Security"/>
+    <meta name="citation_conference_abbrev" content="ICISS"/>
+    <meta name="description" content="In this paper, we give an overview of the BitBlaze project, a new approach to computer security via binary analysis. In particular, BitBlaze focuses on building a unified binary analysis platform and using it to provide novel solutions to a broad spectrum of..."/>
+    <meta name="citation_author" content="Song, Dawn"/>
+    <meta name="citation_author_institution" content="UC Berkeley"/>
+    <meta name="citation_author" content="Brumley, David"/>
+    <meta name="citation_author_institution" content="Carnegie Mellon University"/>
+    <meta name="citation_author" content="Yin, Heng"/>
+    <meta name="citation_author_institution" content="UC Berkeley"/>
+    <meta name="citation_author_institution" content="Carnegie Mellon University"/>
+    <meta name="citation_author_institution" content="College of William and Mary"/>
+    <meta name="citation_author" content="Caballero, Juan"/>
+    <meta name="citation_author_institution" content="UC Berkeley"/>
+    <meta name="citation_author_institution" content="Carnegie Mellon University"/>
+    <meta name="citation_author" content="Jager, Ivan"/>
+    <meta name="citation_author_institution" content="Carnegie Mellon University"/>
+    <meta name="citation_author" content="Kang, Min Gyung"/>
+    <meta name="citation_author_institution" content="UC Berkeley"/>
+    <meta name="citation_author_institution" content="Carnegie Mellon University"/>
+    <meta name="citation_author" content="Liang, Zhenkai"/>
+    <meta name="citation_author_institution" content="Carnegie Mellon University"/>
+    <meta name="citation_author" content="Newsome, James"/>
+    <meta name="citation_author_institution" content="Carnegie Mellon University"/>
+    <meta name="citation_author" content="Poosankam, Pongsin"/>
+    <meta name="citation_author_institution" content="UC Berkeley"/>
+    <meta name="citation_author_institution" content="Carnegie Mellon University"/>
+    <meta name="citation_author" content="Saxena, Prateek"/>
+    <meta name="citation_author_institution" content="UC Berkeley"/>
+    <meta name="citation_publisher" content="Springer, Berlin, Heidelberg"/>
+    <meta name="citation_springer_api_url" content="http://api.springer.com/xmldata/jats?q=doi:10.1007/978-3-540-89862-7_1&amp;api_key="/>
+    <meta name="format-detection" content="telephone=no"/>
+    
+
+    
+    
+    <meta property="og:url" content="https://link.springer.com/chapter/10.1007/978-3-540-89862-7_1"/>
+    <meta property="og:type" content="Paper"/>
+    <meta property="og:site_name" content="SpringerLink"/>
+    <meta property="og:title" content="BitBlaze: A New Approach to Computer Security via Binary Analysis"/>
+    <meta property="og:description" content="In this paper, we give an overview of the BitBlaze project, a new approach to computer security via binary analysis. In particular, BitBlaze focuses on building a unified binary analysis platform and using it to provide novel solutions to a broad spectrum of..."/>
+    <meta property="og:image" content="https://static-content.springer.com/cover/book/978-3-540-89862-7.jpg"/>
+    
+
+
+    <title>BitBlaze: A New Approach to Computer Security via Binary Analysis | SpringerLink</title>
+
+    <link rel="shortcut icon" href=/oscar-static/images/favicons/springerlink/favicon-eb9f5576a3.ico />
+<link rel="icon" sizes="16x16 32x32 48x48" href=/oscar-static/images/favicons/springerlink/favicon-eb9f5576a3.ico />
+<link rel="icon" sizes="16x16" type="image/png" href=/oscar-static/images/favicons/springerlink/favicon-16x16-8bd8c1c945.png />
+<link rel="icon" sizes="32x32" type="image/png" href=/oscar-static/images/favicons/springerlink/favicon-32x32-61a52d80ab.png />
+<link rel="icon" sizes="48x48" type="image/png" href=/oscar-static/images/favicons/springerlink/favicon-48x48-0ec46b6b10.png />
+<link rel="apple-touch-icon" href=/oscar-static/images/favicons/springerlink/app-icon-iphone@3x-f259d46347.png />
+<link rel="apple-touch-icon" sizes="72x72" href=/oscar-static/images/favicons/springerlink/ic_launcher_hdpi-f77cda7f65.png />
+<link rel="apple-touch-icon" sizes="76x76" href=/oscar-static/images/favicons/springerlink/app-icon-ipad-c3fd26520d.png />
+<link rel="apple-touch-icon" sizes="114x114" href=/oscar-static/images/favicons/springerlink/app-icon-114x114-3d7d4cf9f3.png />
+<link rel="apple-touch-icon" sizes="120x120" href=/oscar-static/images/favicons/springerlink/app-icon-iphone@2x-67b35150b3.png />
+<link rel="apple-touch-icon" sizes="144x144" href=/oscar-static/images/favicons/springerlink/ic_launcher_xxhdpi-986442de7b.png />
+<link rel="apple-touch-icon" sizes="152x152" href=/oscar-static/images/favicons/springerlink/app-icon-ipad@2x-677ba24d04.png />
+<link rel="apple-touch-icon" sizes="180x180" href=/oscar-static/images/favicons/springerlink/app-icon-iphone@3x-f259d46347.png />
+
+
+    
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+
+    
+        <style>@media only print, only all and (prefers-color-scheme: no-preference), only all and (prefers-color-scheme: light), only all and (prefers-color-scheme: dark) { a{text-decoration:underline;text-decoration-skip-ink:auto}html{text-size-adjust:100%;-webkit-font-smoothing:subpixel-antialiased;box-sizing:border-box;color:#333;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;font-size:100%;height:100%;line-height:1.61803;overflow-y:scroll}body{background:#fcfcfc;font-size:1.125rem;line-height:1.5;max-width:100%;min-height:100%}article,aside,header,main,nav,section{display:block}h1{font-size:2em;margin:.67em 0}a{background-color:transparent;color:#004b83;overflow-wrap:break-word;word-break:break-word}sup{font-size:75%;line-height:0;position:relative;top:-.5em;vertical-align:baseline}img{border:0;height:auto;max-width:100%;vertical-align:middle}svg:not(:root){overflow:hidden}button,input{font-family:sans-serif;font-size:100%}input{line-height:1.15}button,input{overflow:visible}button{text-transform:none}[type=submit],button,html [type=button]{-webkit-appearance:button}[hidden]{display:none}button{border-radius:0;cursor:pointer;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;line-height:inherit}h1,h2{font-family:Georgia,Palatino,serif;font-weight:400}h1{font-size:2.25rem}.u-h3,h1{font-style:normal;margin-bottom:1em}.u-h3{font-family:Georgia,Palatino,serif;font-weight:400;line-height:1.4}.u-h3,h2{font-size:1.75rem}.u-h3{font-size:1.5rem}h2{font-style:normal;margin-bottom:1em}label{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif}*{box-sizing:inherit}body,button,div,form,input{margin:0;padding:0}p{padding:0}h1,h2{line-height:1.4}p{margin:0}h1,h2,ul{margin-top:0}p{margin-bottom:1.5em;overflow-wrap:break-word;word-break:break-word}p:last-child{margin-bottom:0}p:empty{display:none}.c-ad{text-align:center}@media only screen and (min-width:320px){.c-ad{padding:8px}}.c-ad--728x90{background-color:#ccc;display:none}.c-ad--728x90 .c-ad__inner{min-height:calc(1.5em + 94px)}.c-ad--728x90 iframe{height:90px;max-width:970px}@media only screen and (min-width:768px){.js .c-ad--728x90{display:none}.js .u-show-following-ad+.c-ad--728x90{display:block}}.c-ad iframe{border:0;overflow:auto;vertical-align:top}.c-ad__label{color:#333;font-size:.875rem;font-weight:400;line-height:1.5;margin-bottom:4px}.c-ad__label,.c-banner{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif}.c-banner{background-color:#f7fbfe;border-bottom:1px solid #003b84;font-size:1rem;margin:0 auto;padding:16px 12px;position:relative;text-align:center}.c-banner--marketing .c-banner__link{color:#fff}.c-banner--marketing{background-color:#004b83;border-bottom:0;color:#fff}.c-banner__link{color:#004b83;text-decoration:underline}.c-skip-link{background:#f7fbfe;bottom:auto;color:#004b83;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;font-size:.875rem;padding:8px;position:absolute;text-align:center;transform:translateY(-100%);z-index:9999}@media (prefers-reduced-motion:reduce){.c-skip-link{transition:top .3s ease-in-out 0s}}@media print{.c-skip-link{display:none}}.c-skip-link:link{color:#004b83}.c-pagination{align-items:center;display:flex;flex-wrap:wrap;font-size:.875rem;list-style:none;margin:0;padding:16px}@media only screen and (min-width:540px){.c-pagination{justify-content:center}}.c-pagination__item{margin-bottom:8px;margin-right:16px}.c-pagination__item:last-child{margin-right:0}.c-pagination__link{align-items:center;background-color:#f2f2f2;background-image:linear-gradient(#fff,#f2f2f2);border:1px solid #ccc;border-radius:2px;color:#004b83;cursor:pointer;display:inline-flex;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;font-size:1rem;justify-content:center;line-height:1.3;margin:0;min-width:30px;padding:8px;position:relative;text-align:center;text-decoration:none;transition:all .25s ease 0s,color .25s ease 0s,border-color .25s ease 0s;width:auto}.c-pagination__link svg,.c-pagination__link--disabled svg{fill:currentcolor}.c-pagination__link:visited{color:#004b83}.c-pagination__link:focus,.c-pagination__link:hover{border:1px solid #666;text-decoration:none}.c-pagination__link:focus,.c-pagination__link:hover{background-color:#666;background-image:none;color:#fff}.c-pagination__link:focus svg path,.c-pagination__link:hover svg path{fill:#fff}.c-pagination__link--disabled{align-items:center;background-color:transparent;background-image:none;border-radius:2px;color:#333;cursor:default;display:inline-flex;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;font-size:1rem;justify-content:center;line-height:1.3;margin:0;opacity:.67;padding:8px;position:relative;transition:all .25s ease 0s,color .25s ease 0s,border-color .25s ease 0s;width:auto}.c-pagination__link--disabled:visited{color:#333}.c-pagination__link--disabled,.c-pagination__link--disabled:focus,.c-pagination__link--disabled:hover{border:1px solid #ccc;text-decoration:none}.c-pagination__link--disabled:focus,.c-pagination__link--disabled:hover{background-color:transparent;background-image:none;color:#333}.c-pagination__link--disabled:focus svg path,.c-pagination__link--disabled:hover svg path{fill:#333}.c-pagination__link--active{background-color:#666;background-image:none;border-color:#666;color:#fff;cursor:default}.c-pagination__ellipsis{background:0 0;border:0;min-width:auto;padding-left:0;padding-right:0}.c-pagination__icon{fill:#999;height:12px;width:16px}.c-pagination__icon--active{fill:#004b83}.c-box{background-color:#fff;border:1px solid #ccc;border-radius:2px;line-height:1.3;padding:16px}.c-box--shadowed{box-shadow:0 0 5px 0 hsla(0,0%,50%,.1)}.c-header{background-color:#fff;border-bottom:4px solid #00285a;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;font-size:1rem;padding:16px 0}.c-header__container,.c-header__menu{align-items:center;display:flex;flex-wrap:wrap}@supports (gap:2em){.c-header__container,.c-header__menu{gap:2em 2em}}.c-header__menu{list-style:none;margin:0;padding:0}.c-header__item{color:inherit}@supports not (gap:2em){.c-header__item{margin-left:24px}}.c-header__container{justify-content:space-between;margin:0 auto;max-width:1280px;padding:0 16px}@supports not (gap:2em){.c-header__brand{margin-right:32px}}.c-header__brand a{display:block;text-decoration:none}.c-header__link{color:inherit;text-decoration:none}.c-popup-search{background-color:#eee;box-shadow:0 3px 3px -3px rgba(0,0,0,.21);padding:16px 0;position:relative;z-index:10}@media only screen and (min-width:1024px){.js .c-popup-search{position:absolute;top:100%;width:100%}.c-popup-search__container{margin:auto;max-width:70%}}.c-article-header{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;margin-bottom:40px}.c-article-identifiers{color:#6f6f6f;display:flex;flex-wrap:wrap;font-size:1rem;line-height:1.3;list-style:none;margin:0 0 8px;padding:0}.c-article-identifiers__item{border-right:1px solid #6f6f6f;list-style:none;margin-right:8px;padding-right:8px}.c-article-identifiers__item:last-child{border-right:0;margin-right:0;padding-right:0}.c-article-title{font-size:1.5rem;line-height:1.25;margin-bottom:16px}@media only screen and (min-width:768px){.c-article-title{font-size:1.875rem;line-height:1.2}}.c-article-author-list{display:inline;font-size:1rem;list-style:none;margin:0 8px 0 0;padding:0;width:100%}.c-article-author-list__item,.c-article-extras .c-pdf-container .c-pdf-download+.c-pdf-download{margin-left:0}.c-article-author-list li,.c-article-author-list__item{display:inline;padding-right:0}.c-article-author-list__item svg{margin-left:4px}.c-article-metrics-bar{display:flex;flex-wrap:wrap;font-size:1rem;line-height:1.3}.c-article-metrics-bar__wrapper{margin:0 0 16px}.c-article-metrics-bar__item{align-items:baseline;border-right:1px solid #6f6f6f;margin-right:8px}.c-article-metrics-bar__item:last-child{border-right:0}.c-article-metrics-bar__count{font-weight:700;margin:0}.c-article-metrics-bar__label{color:#626262;font-style:normal;font-weight:400;margin:0 10px 0 5px}.c-article-main-column{font-family:Georgia,Palatino,serif;margin-right:8.6%;width:60.2%}@media only screen and (max-width:1023px){.c-article-main-column{margin-right:0;width:100%}}.c-article-extras{float:left;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;width:31.2%}@media only screen and (max-width:1023px){.c-article-extras{display:none}}.c-article-section__title{border-bottom:2px solid #d5d5d5;font-size:1.25rem;line-height:1.3;margin:0;padding-bottom:8px}@media only screen and (min-width:768px){.c-article-section__title{font-size:1.5rem;line-height:1.24}}.c-article-section{clear:both}.c-article-section__content{margin-bottom:40px;padding-top:8px}@media only screen and (max-width:1023px){.c-article-section__content{padding-left:0}}.c-article-authors-search{margin-bottom:24px;margin-top:0}.c-article-authors-search__item,.c-article-authors-search__title{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif}.c-article-authors-search__title{color:#626262;font-size:1.05rem;font-weight:700;margin:0;padding:0}.c-article-authors-search__item{font-size:1rem}.c-article-authors-search__text{margin:0}.c-article-share-box__no-sharelink-info{font-size:.813rem;font-weight:700;margin-bottom:24px;padding-top:4px}.c-article-share-box__only-read-input{border:1px solid #d5d5d5;display:inline-block;font-size:.875rem;font-weight:700;margin-bottom:8px;padding:8px 10px}.c-article-share-box__button--link-like{background-color:transparent;border:0;color:#069;cursor:pointer;font-size:.875rem;margin-bottom:8px;margin-left:10px}.c-context-bar{box-shadow:0 0 10px 0 rgba(51,51,51,.2);position:relative;width:100%}.c-context-bar__title{display:none}.c-reading-companion{clear:both}.c-reading-companion__sticky{max-width:389px}.c-reading-companion__scroll-pane{margin:0;min-height:200px;overflow:hidden auto}.c-reading-companion__tabs{display:flex;flex-flow:row nowrap;font-size:1rem;list-style:none;margin:0 0 8px;padding:0}.c-reading-companion__tabs>li{flex-grow:1}.c-reading-companion__tab{background-color:#eee;border:1px solid #d5d5d5;border-image:initial;border-left-width:0;color:#069;font-size:1rem;padding:8px 8px 8px 15px;text-align:left;width:100%}.c-reading-companion__tabs li:first-child .c-reading-companion__tab{border-left-width:1px}.c-reading-companion__tab--active{background-color:#fcfcfc;border-bottom:1px solid #fcfcfc;color:#222;font-weight:700}.c-reading-companion__references-list,.c-reading-companion__sections-list{list-style:none;padding:0}.c-reading-companion__sections-list{margin:0 0 8px;min-height:50px}.c-reading-companion__section-item{font-size:1rem;padding:0}.c-reading-companion__section-item a{display:block;line-height:1.5;overflow:hidden;padding:8px 0 8px 16px;text-overflow:ellipsis;white-space:nowrap}.c-reading-companion__reference-item{border-top:1px solid #d5d5d5;font-size:1rem;padding:8px 8px 8px 16px}.c-reading-companion__reference-item:first-child{border-top:none}.c-reading-companion__reference-item a{word-break:break-word}.c-reading-companion__reference-citation{display:inline}.c-reading-companion__reference-links{font-size:.813rem;font-weight:700;list-style:none;margin:8px 0 0;padding:0;text-align:right}.c-reading-companion__reference-links>a{display:inline-block;padding-left:8px}.c-reading-companion__reference-links>a:first-child{display:inline-block;padding-left:0}.c-reading-companion__panel{border-top:none;display:none;margin-top:0;padding-top:0}.c-reading-companion__panel--active{display:block}.c-pdf-download{display:flex;margin-bottom:16px;max-height:48px}@media only screen and (min-width:540px){.c-pdf-download{max-height:none}}@media only screen and (min-width:1024px){.c-pdf-download{max-height:48px}}.c-pdf-download__link{display:flex;flex:1 1 0%;padding:13px 24px!important}.c-pdf-download__text{padding-right:4px}@media only screen and (max-width:539px){.c-pdf-download__text{text-transform:capitalize}}@media only screen and (min-width:540px){.c-pdf-download__text{padding-right:8px}}@media only screen and (max-width:539px){.c-pdf-download .u-sticky-visually-hidden{clip:rect(0,0,0,0);border:0;height:1px;margin:-100%;overflow:hidden;padding:0;position:absolute!important;width:1px}}.c-pdf-container{display:flex;justify-content:flex-end}@media only screen and (max-width:539px){.c-pdf-container .c-pdf-download{display:flex;flex-basis:100%}}.c-pdf-container .c-pdf-download+.c-pdf-download{margin-left:16px}.c-article-extras .c-pdf-container{flex-wrap:wrap;width:100%}.c-article-extras .c-pdf-container .c-pdf-download{width:100%}.app-journal-header__theme{border-top-left-radius:2px;border-top-right-radius:2px;height:50px;margin:-16px -16px 0;overflow:hidden;position:relative}@media only screen and (min-width:1024px){.app-journal-header__theme:after{background-color:hsla(0,0%,100%,.15);bottom:0;content:"";position:absolute;right:0;top:0;width:456px}}.app-journal-header__content{padding-top:16px}@media only screen and (min-width:1024px){.app-journal-header__content{display:flex}}.app-journal-header__main{display:flex;flex:1 1 auto}.app-journal-header__cover{margin-right:16px;margin-top:-50px;position:relative;z-index:5}.app-journal-header__cover img{border:2px solid #fff;border-radius:4px;box-shadow:0 0 5px 2px hsla(0,0%,64%,.2);max-height:125px;max-width:96px}.app-search__content{display:flex}.app-search__label{color:#666;display:inline-block;font-size:.875rem;margin-bottom:8px}.app-search__input{border:1px solid #b3b3b3;border-bottom-left-radius:3px;border-top-left-radius:3px;box-shadow:inset 0 1px 3px 0 rgba(0,0,0,.21);flex:0 1 auto;font-size:.875rem;line-height:1.2;padding:.75em 1em;vertical-align:middle;width:100%}.app-search__button{align-items:center;background-color:#33629d;background-image:linear-gradient(#4d76a9,#33629d);border:1px solid rgba(0,59,132,.5);border-radius:0 2px 2px 0;color:#fff;cursor:pointer;display:inline-flex;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;font-size:1rem;justify-content:center;line-height:1.3;margin:0;padding:8px;position:relative;text-align:center;text-decoration:none;transition:all .25s ease 0s,color .25s ease 0s,border-color .25s ease 0s;width:50px}.app-search__button svg,.u-button svg,.u-button--primary svg{fill:currentcolor}.u-button{align-items:center;background-color:#f2f2f2;background-image:linear-gradient(#fff,#f2f2f2);border:1px solid #ccc;border-radius:2px;color:#004b83;cursor:pointer;display:inline-flex;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;font-size:1rem;justify-content:center;line-height:1.3;margin:0;padding:8px;position:relative;text-decoration:none;transition:all .25s ease 0s,color .25s ease 0s,border-color .25s ease 0s;width:auto}.u-button--primary{background-color:#33629d;background-image:linear-gradient(#4d76a9,#33629d);border:1px solid rgba(0,59,132,.5);color:#fff}.u-button--full-width{display:flex;width:100%}.u-clearfix:after,.u-clearfix:before{content:"";display:table}.u-clearfix:after{clear:both}.u-display-block{display:block}.u-display-flex{display:flex;width:100%}.u-align-items-center{align-items:center}.u-justify-content-space-between{justify-content:space-between}.u-flex-shrink{flex:0 1 auto}.u-flex-static{flex:0 0 auto}.u-display-none{display:none}.js .u-js-hide{display:none;visibility:hidden}@media print{.u-hide-print{display:none}}.u-icon{fill:currentcolor;display:inline-block;height:1em;transform:translate(0);vertical-align:text-top;width:1em}.u-list-reset{list-style:none;margin:0;padding:0}.u-button-reset{background-color:transparent;border:0;padding:0}.u-container{margin:0 auto;max-width:1280px;padding:0 16px}.u-position-relative{position:relative}.u-mr-24{margin-right:24px}.u-mb-16{margin-bottom:16px}.u-mb-24{margin-bottom:24px}.u-mb-32{margin-bottom:32px}.u-ml-8{margin-left:8px}.u-float-left{float:left}.u-hide{display:none;visibility:hidden}@media only screen and (min-width:1024px){.u-hide-at-lg{display:none;visibility:hidden}}.u-visually-hidden{clip:rect(0,0,0,0);border:0;height:1px;margin:-100%;overflow:hidden;padding:0;position:absolute!important;width:1px}.u-text-sm{font-size:1rem}.u-text-sans-serif{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif}.hide{display:none;visibility:hidden}.visually-hidden{clip:rect(1px,1px,1px,1px);height:1px;position:absolute!important;width:1px}.c-article-section__content p{line-height:1.8}.c-pagination__input{border:1px solid #bfbfbf;border-radius:2px;box-shadow:inset 0 2px 6px 0 rgba(51,51,51,.2);box-sizing:initial;display:inline-block;height:28px;margin:0;max-width:64px;min-width:16px;padding:0 8px;text-align:center;transition:width .15s ease 0s}.c-pagination__input::-webkit-inner-spin-button,.c-pagination__input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.c-reading-companion__sections-list{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif}.c-article-section__title,.c-article-title{font-weight:400}.c-chapter-book-series{font-size:1rem}.c-chapter-identifiers{margin:16px 0 8px}@media only screen and (max-width:539px){.app-journal-header__cover img{max-width:76px}}.c-chapter-book-details{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;font-size:1rem;position:relative}.c-chapter-book-details__title{font-weight:700}.c-chapter-book-details__cite-as{border-left:1px solid #6f6f6f;margin-left:8px;padding-left:8px}.c-chapter-book-details a{color:inherit}@media only screen and (max-width:539px){.c-chapter-book-details__meta{display:block}}.c-header__cart-icon{margin-right:12px}.c-header__navigation{display:flex} }</style>
+    
+
+    
+        <link rel="stylesheet" data-inline-css-source="critical-css" href="/oscar-static/app-springerlink/css/enhanced-article-fd1fcbe195.css" media="print" onload="this.media='only print, only all and (prefers-color-scheme: no-preference), only all and (prefers-color-scheme: light), only all and (prefers-color-scheme: dark)';this.onload=null">
+    
+
+    
+    <script>
+        window.dataLayer = [{"GA Key":"UA-26408784-1","DOI":"10.1007/978-3-540-89862-7_1","Page":"chapter","page":{"attributes":{"environment":"live"}},"Country":"HK","doi":"10.1007-978-3-540-89862-7_1","Keywords":"Binary analysis, malware analysis and defense, vulnerability analysis and defense, reverse engineering","kwrd":["Binary_analysis","malware_analysis_and_defense","vulnerability_analysis_and_defense","reverse_engineering"],"Labs":"Y","ksg":"Krux.segments","kuid":"Krux.uid","Has Body":"N","Features":[],"Open Access":"N","hasAccess":"N","bypassPaywall":"N","user":{"license":{"businessPartnerID":[],"businessPartnerIDString":""}},"Access Type":"no-access","Bpids":"","Bpnames":"","BPID":["1"],"VG Wort Identifier":"pw-vgzm.415900-10.1007-978-3-540-89862-7_1","Full HTML":"N","session":{"authentication":{"loginStatus":"N"},"attributes":{"edition":"academic"}},"content":{"serial":{"eissn":"1611-3349","pissn":"0302-9743"},"book":{"doi":"10.1007/978-3-540-89862-7","title":"Information Systems Security","pisbn":"978-3-540-89861-0","eisbn":"978-3-540-89862-7","bookProductType":"Proceedings","seriesTitle":"Lecture Notes in Computer Science","seriesId":"558"},"chapter":{"doi":"10.1007/978-3-540-89862-7_1"},"type":"ConferencePaper","category":{"pmc":{"primarySubject":"Computer Science","primarySubjectCode":"SCI","secondarySubjects":{"1":"Systems and Data Security","2":"Computer Communication Networks","3":"Information Storage and Retrieval","4":"Management of Computing and Information Systems","5":"Biometrics","6":"Cryptology"},"secondarySubjectCodes":{"1":"SCI28060","2":"SCI13022","3":"SCI18032","4":"SCI24067","5":"SCI22040","6":"SCI28020"}},"sucode":"SUCO11645"},"attributes":{"deliveryPlatform":"oscar"},"country":"HK","Has Preview":"Y","subjectCodes":"SCI,SCI28060,SCI13022,SCI18032,SCI24067,SCI22040,SCI28020","PMC":["SCI","SCI28060","SCI13022","SCI18032","SCI24067","SCI22040","SCI28020"]},"Event Category":"Conference Paper","ConferenceSeriesId":"iciss, iciss","productId":"9783540898627"}];
+    </script>
+
+    <script>
+    window.dataLayer.push({
+        ga4MeasurementId: 'G-B3E4QL2TPR',
+        ga360TrackingId: 'UA-26408784-1',
+        twitterId: 'o47a7',
+        ga4ServerUrl: 'https://collect.springer.com',
+        imprint: 'springerlink'
+    });
+</script>
+
+    <script data-test="gtm-head">
+    window.initGTM = function() {
+        if (window.config.mustardcut) {
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+                var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s),
+                        dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = 'https://collect.springer.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-MRVXSHQ');
+        }
+    }
+</script>
+    <script>
+    (function(w,d,t) {
+        function cc() {
+            var h = w.location.hostname;
+            var e = d.createElement(t),
+                    s = d.getElementsByTagName(t)[0];
+
+            if (h.indexOf('springer.com') > -1) {
+                e.src = 'https://push-content.springernature.io/pcf_sb_5_1617714720898560639/production_live/consent-bundle-17-13.js';
+                e.setAttribute('onload', "initGTM(window,document,'script','dataLayer','GTM-MRVXSHQ')");
+            } else {
+                e.src = '/static/js/lib/cookie-consent.min.js';
+                e.setAttribute('data-consent', h);
+            }
+            s.insertAdjacentElement('afterend', e);
+        }
+
+        cc();
+    })(window,document,'script');
+</script>
+
+    
+    <script>
+        (function(w, d) {
+            w.config = w.config || {};
+            w.config.mustardcut = false;
+
+            
+            if (w.matchMedia && w.matchMedia('only print, only all and (prefers-color-scheme: no-preference), only all and (prefers-color-scheme: light), only all and (prefers-color-scheme: dark)').matches) {
+                w.config.mustardcut = true;
+                d.classList.add('js');
+                d.classList.remove('grade-c');
+            }
+        })(window, document.documentElement);
+    </script>
+
+
+
+    
+<script>
+    (function () {
+        if ( typeof window.CustomEvent === "function" ) return false;
+        function CustomEvent ( event, params ) {
+            params = params || { bubbles: false, cancelable: false, detail: null };
+            var evt = document.createEvent( 'CustomEvent' );
+            evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
+            return evt;
+        }
+
+        CustomEvent.prototype = window.Event.prototype;
+
+        window.CustomEvent = CustomEvent;
+    })();
+</script>
+
+
+    
+    <script class="js-entry">
+        if (window.config.mustardcut) {
+            (function(w, d) {
+                
+                
+                
+                    window.Component = {};
+                    window.suppressShareButton = false;
+                
+
+                var currentScript = d.currentScript || d.head.querySelector('script.js-entry');
+
+                
+                function catchNoModuleSupport() {
+                    var scriptEl = d.createElement('script');
+                    return (!('noModule' in scriptEl) && 'onbeforeload' in scriptEl)
+                }
+
+                var headScripts = [
+                    {'src': '/oscar-static/js/polyfill-es5-bundle-c628920879.js', 'async': false},
+                    {'src': '/oscar-static/js/airbrake-es5-bundle-2c62ede23c.js', 'async': false},
+                ];
+
+                var bodyScripts = [
+                    {'src': '/oscar-static/js/app-es5-bundle-ecc3b3b1d6.js', 'async': false, 'module': false},
+                    {'src': '/oscar-static/js/app-es6-bundle-32c01a93ab.js', 'async': false, 'module': true}
+                    
+                    
+                        , {'src': '/oscar-static/js/global-article-es5-bundle-bf0558fa00.js', 'async': false, 'module': false},
+                        {'src': '/oscar-static/js/global-article-es6-bundle-f34710aafb.js', 'async': false, 'module': true}
+                    
+                ];
+
+                function createScript(script) {
+                    var scriptEl = d.createElement('script');
+                    scriptEl.src = script.src;
+                    scriptEl.async = script.async;
+                    if (script.module === true) {
+                        scriptEl.type = "module";
+                        if (catchNoModuleSupport()) {
+                            scriptEl.src = '';
+                        }
+                    } else if (script.module === false) {
+                        scriptEl.setAttribute('nomodule', true)
+                    }
+                    if (script.charset) {
+                        scriptEl.setAttribute('charset', script.charset);
+                    }
+
+                    return scriptEl;
+                }
+
+                for (var i = 0; i < headScripts.length; ++i) {
+                    var scriptEl = createScript(headScripts[i]);
+                    currentScript.parentNode.insertBefore(scriptEl, currentScript.nextSibling);
+                }
+
+                d.addEventListener('DOMContentLoaded', function() {
+                    for (var i = 0; i < bodyScripts.length; ++i) {
+                        var scriptEl = createScript(bodyScripts[i]);
+                        d.body.appendChild(scriptEl);
+                    }
+                });
+
+                // Webfont repeat view
+                var config = w.config;
+                if (config && config.publisherBrand && sessionStorage.fontsLoaded === 'true') {
+                    d.documentElement.className += ' webfonts-loaded';
+                }
+            })(window, document);
+        }
+    </script>
+
+
+
+    
+    
+    <link rel="canonical" href="https://link.springer.com/chapter/10.1007/978-3-540-89862-7_1"/>
+    
+
+    
+    <script type="application/ld+json">{"headline":"BitBlaze: A New Approach to Computer Security via Binary Analysis","pageEnd":"25","pageStart":"1","image":"https://media.springernature.com/w153/springer-static/cover/book/978-3-540-89862-7.jpg","genre":["Computer Science","Computer Science (R0)"],"isPartOf":{"name":"Information Systems Security","isbn":["978-3-540-89862-7","978-3-540-89861-0"],"@type":"Book"},"publisher":{"name":"Springer Berlin Heidelberg","logo":{"url":"https://www.springernature.com/app-sn/public/images/logo-springernature.png","@type":"ImageObject"},"@type":"Organization"},"author":[{"name":"Song, Dawn","affiliation":[{"name":"UC Berkeley","address":{"name":"UC Berkeley, USA","@type":"PostalAddress"},"@type":"Organization"}],"@type":"Person"},{"name":"Brumley, David","affiliation":[{"name":"Carnegie Mellon University","address":{"name":"Carnegie Mellon University, USA","@type":"PostalAddress"},"@type":"Organization"}],"@type":"Person"},{"name":"Yin, Heng","affiliation":[{"name":"UC Berkeley","address":{"name":"UC Berkeley, USA","@type":"PostalAddress"},"@type":"Organization"},{"name":"Carnegie Mellon University","address":{"name":"Carnegie Mellon University, USA","@type":"PostalAddress"},"@type":"Organization"},{"name":"College of William and Mary","address":{"name":"College of William and Mary, USA","@type":"PostalAddress"},"@type":"Organization"}],"@type":"Person"},{"name":"Caballero, Juan","affiliation":[{"name":"UC Berkeley","address":{"name":"UC Berkeley, USA","@type":"PostalAddress"},"@type":"Organization"},{"name":"Carnegie Mellon University","address":{"name":"Carnegie Mellon University, USA","@type":"PostalAddress"},"@type":"Organization"}],"@type":"Person"},{"name":"Jager, Ivan","affiliation":[{"name":"Carnegie Mellon University","address":{"name":"Carnegie Mellon University, USA","@type":"PostalAddress"},"@type":"Organization"}],"@type":"Person"},{"name":"Kang, Min Gyung","affiliation":[{"name":"UC Berkeley","address":{"name":"UC Berkeley, USA","@type":"PostalAddress"},"@type":"Organization"},{"name":"Carnegie Mellon University","address":{"name":"Carnegie Mellon University, USA","@type":"PostalAddress"},"@type":"Organization"}],"@type":"Person"},{"name":"Liang, Zhenkai","affiliation":[{"name":"Carnegie Mellon University","address":{"name":"Carnegie Mellon University, USA","@type":"PostalAddress"},"@type":"Organization"}],"@type":"Person"},{"name":"Newsome, James","affiliation":[{"name":"Carnegie Mellon University","address":{"name":"Carnegie Mellon University, USA","@type":"PostalAddress"},"@type":"Organization"}],"@type":"Person"},{"name":"Poosankam, Pongsin","affiliation":[{"name":"UC Berkeley","address":{"name":"UC Berkeley, USA","@type":"PostalAddress"},"@type":"Organization"},{"name":"Carnegie Mellon University","address":{"name":"Carnegie Mellon University, USA","@type":"PostalAddress"},"@type":"Organization"}],"@type":"Person"},{"name":"Saxena, Prateek","affiliation":[{"name":"UC Berkeley","address":{"name":"UC Berkeley, USA","@type":"PostalAddress"},"@type":"Organization"}],"@type":"Person"}],"keywords":"Binary analysis, malware analysis and defense, vulnerability analysis and defense, reverse engineering","description":"In this paper, we give an overview of the BitBlaze project, a new approach to computer security via binary analysis. In particular, BitBlaze focuses on building a unified binary analysis platform and using it to provide novel solutions to a broad spectrum of different security problems. The binary analysis platform is designed to enable accurate analysis, provide an extensible architecture, and combines static and dynamic analysis as well as program verification techniques to satisfy the common needs of security applications. By extracting security-related properties from binary programs directly, BitBlaze enables a principled, root-cause based approach to computer security, offering novel and effective solutions, as demonstrated with over a dozen different security applications.","datePublished":"2008","isAccessibleForFree":false,"@type":"ScholarlyArticle","@context":"https://schema.org"}</script>
+
+</head>
+<body class="shared-article-renderer">
+    
+    
+    
+        
+            <!-- Google Tag Manager (noscript) -->
+            <noscript data-test="gtm-body">
+                <iframe src="https://collect.springer.com/ns.html?id=GTM-MRVXSHQ"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        
+    
+
+
+    <div class="u-vh-full">
+        <a class="c-skip-link" href="#main-content">Skip to main content</a>
+        
+            <div class="u-hide u-show-following-ad"></div>
+            <aside class="c-ad c-ad--728x90" data-test="springer-doubleclick-ad">
+                <div class="c-ad__inner">
+                    <p class="c-ad__label">Advertisement</p>
+                    <div id="div-gpt-ad-LB1" data-pa11y-ignore data-gpt data-test="LB1-ad"
+                         data-gpt-unitpath="/270604982/springerlink/book/chapter" data-gpt-sizes="728x90"
+                         style="min-width:728px;min-height:90px" data-gpt-targeting="pos=LB1;">
+                </div>
+            </aside>
+
+
+<div class="u-position-relative">
+        <header class="c-header u-mb-24" data-test="publisher-header">
+    
+        <div class="c-header__container">
+            <div class="c-header__brand">
+                
+    <a id="logo" class="u-display-block" href="/" title="Go to homepage" data-test="springerlink-logo">
+        <picture>
+            <source type="image/svg+xml" srcset=/oscar-static/images/springerlink/svg/springerlink-6c9a864b59.svg>
+            <img src=/oscar-static/images/springerlink/png/springerlink-1db8a5b8b1.png alt="SpringerLink" width="148" height="30" data-test="header-academic">
+        </picture>
+        
+        
+    </a>
+
+
+            </div>
+            <div class="c-header__navigation">
+                
+    
+        <button type="button"
+                class="c-header__link u-button-reset u-mr-24"
+                data-expander
+                data-expander-target="#popup-search"
+                data-expander-autofocus="firstTabbable"
+                data-test="header-search-button">
+            <span class="u-display-flex u-align-items-center">
+                <span class="u-text-sm">Search</span>
+                <svg class="u-icon u-flex-static u-ml-8" aria-hidden="true" focusable="false">
+                    <use xlink:href="#global-icon-search"></use>
+                </svg>
+            </span>
+        </button>
+
+        <div class="c-header__cart-icon">
+            <div id="ecommerce-header-cart-icon-link" class="c-header__item ecommerce-cart" style="display: inline-block; margin-right: 10px;">
+ <form action="https://order.springer.com/public/precheckout" method="post"><button class="c-header__link" type="submit" style="
+        appearance: none;
+        border: none;
+        background: none;
+        color: inherit;
+    ">
+   <svg aria-hidden="true" focusable="false" height="18" viewbox="0 0 18 18" width="18" style="vertical-align: text-bottom;" xmlns="http://www.w3.org/2000/svg"><path d="m5 14c1.1045695 0 2 .8954305 2 2s-.8954305 2-2 2-2-.8954305-2-2 .8954305-2 2-2zm10 0c1.1045695 0 2 .8954305 2 2s-.8954305 2-2 2-2-.8954305-2-2 .8954305-2 2-2zm-10 1c-.55228475 0-1 .4477153-1 1s.44771525 1 1 1 1-.4477153 1-1-.44771525-1-1-1zm10 0c-.5522847 0-1 .4477153-1 1s.4477153 1 1 1 1-.4477153 1-1-.4477153-1-1-1zm-12.82032249-15c.47691417 0 .88746157.33678127.98070211.80449199l.23823144 1.19501025 13.36277974.00045554c.5522847.00001882.9999659.44774934.9999659 1.00004222 0 .07084994-.0075361.14150708-.022474.2107727l-1.2908094 5.98534344c-.1007861.46742419-.5432548.80388386-1.0571651.80388386h-10.24805106c-.59173366 0-1.07142857.4477153-1.07142857 1 0 .5128358.41361449.9355072.94647737.9932723l.1249512.0067277h10.35933776c.2749512 0 .4979349.2228539.4979349.4978051 0 .2749417-.2227336.4978951-.4976753.4980063l-10.35959736.0041886c-1.18346732 0-2.14285714-.8954305-2.14285714-2 0-.6625717.34520317-1.24989198.87690425-1.61383592l-1.63768102-8.19004794c-.01312273-.06561364-.01950005-.131011-.0196107-.19547395l-1.71961253-.00064219c-.27614237 0-.5-.22385762-.5-.5 0-.27614237.22385763-.5.5-.5zm14.53193359 2.99950224h-13.11300004l1.20580469 6.02530174c.11024034-.0163252.22327998-.02480398.33844139-.02480398h10.27064786z" fill="#333" />
+   </svg><span class="u-screenreader-only visually-hidden">Go to cart</span></button>
+ </form>
+</div>
+        </div>
+
+        <nav>
+            <ul class="c-header__menu">
+                
+        
+            <li class="c-header__item">
+                <a
+                    data-test="login-link"
+                    class="c-header__link"
+                    href="https://link.springer.com/signup-login?previousUrl=https%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%2F978-3-540-89862-7_1"
+                    data-track="click"
+                    data-track-category="header"
+                    data-track-action="login header"
+                    data-track-label="link">Log in</a>
+            </li>
+        
+
+        
+
+
+            </ul>
+        </nav>
+    
+
+    
+
+
+
+            </div>
+        </div>
+    </header>
+
+    
+        <div id="popup-search" class="c-popup-search u-mb-16 js-header-search u-js-hide">
+            <div class="c-popup-search__content">
+                <div class="u-container">
+                    <div class="c-popup-search__container" data-test="springerlink-popup-search">
+                        <div class="app-search">
+    <form role="search" method="GET" action="/search" >
+        <label for="search" class="app-search__label">Search SpringerLink</label>
+        <div class="app-search__content">
+            <input id="search" class="app-search__input" data-search-input autocomplete="off" role="textbox" name="query" type="text" value="">
+            <button class="app-search__button" type="submit">
+                <span class="u-visually-hidden">Search</span>
+                <svg class="u-icon" aria-hidden="true" focusable="false">
+                    <use xlink:href="#global-icon-search"></use>
+                </svg>
+            </button>
+            
+                <input type="hidden" name="searchType" value="publisherSearch">
+            
+            
+        </div>
+    </form>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+
+        
+
+<div class="u-container u-mb-32 u-clearfix" id="main-content" data-component="article-container">
+    
+    <div class="u-hide-at-lg js-context-bar-sticky-point-mobile">
+        
+    </div>
+    
+
+    <header class="u-mb-24" data-test="chapter-information-header">
+        <div class="c-box c-box--shadowed"><div class="app-journal-header"><div class="app-journal-header__theme" style="background-image: url('//media.springernature.com/dominant-colour/springer-static/cover/book/978-3-540-89862-7.jpg')"></div><div class="app-journal-header__content"><div class="app-journal-header__main"><div class="app-journal-header__cover"><div class="c-expand-overlay-wrapper"><a data-component="cover-zoom" data-img-src="//media.springernature.com/full/springer-static/cover-hires/book/978-3-540-89862-7" rel="nofollow" href="/chapter/10.1007/978-3-540-89862-7_1/cover/"><img alt="View expanded cover" srcset="                                                     //media.springernature.com/w92/springer-static/cover/book/978-3-540-89862-7.jpg 1x,                                                     //media.springernature.com/w138/springer-static/cover/book/978-3-540-89862-7.jpg 1.5x,                                                     //media.springernature.com/w184/springer-static/cover/book/978-3-540-89862-7.jpg 2x,                                                     //media.springernature.com/w276/springer-static/cover/book/978-3-540-89862-7.jpg 3x" src="//media.springernature.com/w92/springer-static/cover/book/978-3-540-89862-7.jpg"><svg data-component="expand-icon" class="c-expand-overlay u-icon u-hide" width="18" height="18" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-expand-image"></use></svg></a></div></div><div class="c-cover-image-lightbox u-hide" data-component="cover-lightbox"></div><div class="u-flex-shrink"><p class="c-chapter-info-details u-mb-8"><a data-track="click" data-track-action="open conference" data-track-label="link" href="/conference/iciss iciss">International Conference on Information Systems Security</a></p><p class="c-chapter-book-details right-arrow">ICISS 2008: <a class="c-chapter-book-details__title" data-test="book-link" data-track="click" data-track-action="open book series" data-track-label="link" href="/book/10.1007/978-3-540-89862-7">Information Systems Security</a>
+                                        pp
+                                         1–25<a href="#citeas" class="c-chapter-book-details__cite-as u-hide-print" data-track="click" data-track-action="cite this chapter" data-track-label="link">Cite as</a></p></div></div></div></div></div>
+    </header>
+
+    <main class="c-article-main-column u-float-left js-main-column u-text-sans-serif" data-track-component="conference paper">
+        
+
+        <article lang="en">
+            <header data-test="chapter-detail-header">
+                <div class="c-article-header">
+                    <h1 class="c-article-title" data-test="chapter-title" data-chapter-title="">BitBlaze: A New Approach to Computer Security via Binary Analysis</h1>
+                    <ul class="c-article-author-list js-etal-collapsed" data-etal="25" data-etal-small="3" data-test="authors-list" data-component-authors-activator="authors-list"><li class="c-article-author-list__item"><a data-test="author-name" data-track="click" data-track-action="open author" data-track-label="link" href="#auth-Dawn-Song" aria-label="Read more about Dawn Song" data-author-popup="auth-Dawn-Song">Dawn Song</a><sup class="u-js-hide"><a href="#Aff3">3</a></sup>, </li><li class="c-article-author-list__item"><a data-test="author-name" data-track="click" data-track-action="open author" data-track-label="link" href="#auth-David-Brumley" aria-label="Read more about David Brumley" data-author-popup="auth-David-Brumley">David Brumley</a><sup class="u-js-hide"><a href="#Aff4">4</a></sup>, </li><li class="c-article-author-list__item"><a data-test="author-name" data-track="click" data-track-action="open author" data-track-label="link" href="#auth-Heng-Yin" aria-label="Read more about Heng Yin" data-author-popup="auth-Heng-Yin">Heng Yin</a><sup class="u-js-hide"><a href="#Aff3">3</a>,<a href="#Aff4">4</a>,<a href="#Aff5">5</a></sup>, </li><li class="c-article-author-list__item"><a data-test="author-name" data-track="click" data-track-action="open author" data-track-label="link" href="#auth-Juan-Caballero" aria-label="Read more about Juan Caballero" data-author-popup="auth-Juan-Caballero">Juan Caballero</a><sup class="u-js-hide"><a href="#Aff3">3</a>,<a href="#Aff4">4</a></sup>, </li><li class="c-article-author-list__item"><a data-test="author-name" data-track="click" data-track-action="open author" data-track-label="link" href="#auth-Ivan-Jager" aria-label="Read more about Ivan Jager" data-author-popup="auth-Ivan-Jager">Ivan Jager</a><sup class="u-js-hide"><a href="#Aff4">4</a></sup>, </li><li class="c-article-author-list__item"><a data-test="author-name" data-track="click" data-track-action="open author" data-track-label="link" href="#auth-Min_Gyung-Kang" aria-label="Read more about Min Gyung Kang" data-author-popup="auth-Min_Gyung-Kang">Min Gyung Kang</a><sup class="u-js-hide"><a href="#Aff3">3</a>,<a href="#Aff4">4</a></sup>, </li><li class="c-article-author-list__item"><a data-test="author-name" data-track="click" data-track-action="open author" data-track-label="link" href="#auth-Zhenkai-Liang" aria-label="Read more about Zhenkai Liang" data-author-popup="auth-Zhenkai-Liang">Zhenkai Liang</a><sup class="u-js-hide"><a href="#Aff4">4</a></sup>, </li><li class="c-article-author-list__item"><a data-test="author-name" data-track="click" data-track-action="open author" data-track-label="link" href="#auth-James-Newsome" aria-label="Read more about James Newsome" data-author-popup="auth-James-Newsome">James Newsome</a><sup class="u-js-hide"><a href="#Aff4">4</a></sup>, </li><li class="c-article-author-list__item"><a data-test="author-name" data-track="click" data-track-action="open author" data-track-label="link" href="#auth-Pongsin-Poosankam" aria-label="Read more about Pongsin Poosankam" data-author-popup="auth-Pongsin-Poosankam">Pongsin Poosankam</a><sup class="u-js-hide"><a href="#Aff3">3</a>,<a href="#Aff4">4</a></sup> &amp; </li><li class="c-article-author-list__item"><a data-test="author-name" data-track="click" data-track-action="open author" data-track-label="link" href="#auth-Prateek-Saxena" aria-label="Read more about Prateek Saxena" data-author-popup="auth-Prateek-Saxena">Prateek Saxena</a><sup class="u-js-hide"><a href="#Aff3">3</a></sup> </li></ul>
+                    <ul class="c-article-identifiers c-chapter-identifiers">
+                        
+    
+        <li class="c-article-identifiers__item" data-test="article-category">Conference paper</li>
+    
+    
+
+                        
+                        
+                    </ul>
+
+                    <div data-test="article-metrics">
+                        <div id="altmetric-container">
+    <div class="c-article-metrics-bar__wrapper u-clear-both">
+        <ul class="c-article-metrics-bar u-list-reset">
+            
+                <li class=" c-article-metrics-bar__item">
+                    <p class="c-article-metrics-bar__count">2602 <span class="c-article-metrics-bar__label">Accesses</span></p>
+                </li>
+            
+            
+                
+                    <li class="c-article-metrics-bar__item">
+                        <p class="c-article-metrics-bar__count">334
+                            <a href="http://citations.springer.com/item?doi&#x3D;10.1007/978-3-540-89862-7_1" target="_blank" rel="noopener"
+                               title="Visit Springer Citations for full citation details"
+                               class="c-article-metrics-bar__label"
+                               data-track="click"
+                               data-track-action="Citation count"
+                               data-track-label="link">Citations</a></p>
+                    </li>
+                
+            
+            
+                
+                    <li class="c-article-metrics-bar__item">
+                        <p class="c-article-metrics-bar__count">4
+                            
+                                <a href="https://link.altmetric.com/details/18094972" target="_blank" rel="noopener"
+                                   title="Visit Altmetric for full social mention details"
+                                   class="c-article-metrics-bar__label"
+                                   data-track="click"
+                                   data-track-action="Social mentions"
+                                   data-track-label="link">Altmetric</a></p>
+                            
+                    </li>
+                
+            
+        </ul>
+    </div>
+</div>
+
+                    </div>
+
+                    
+    
+        <p class="c-chapter-book-series">Part of the <a data-track="click" data-track-action="open book series" data-track-label="link" href="/bookseries/558">Lecture Notes in Computer Science</a> book series (LNSC,volume 5352)</p>
+    
+
+                </div>
+            </header>
+
+            <div data-article-body="true" class="c-article-body">
+
+                
+                    
+                        <section aria-labelledby="Abs1" data-title="Abstract" lang="en"><div class="c-article-section" id="Abs1-section"><h2 id="Abs1" class="c-article-section__title js-section-title js-c-reading-companion-sections-item">Abstract</h2><div class="c-article-section__content" id="Abs1-content"><p>In this paper, we give an overview of the BitBlaze project, a new approach to computer security via binary analysis. In particular, BitBlaze focuses on building a unified binary analysis platform and using it to provide novel solutions to a broad spectrum of different security problems. The binary analysis platform is designed to enable accurate analysis, provide an extensible architecture, and combines static and dynamic analysis as well as program verification techniques to satisfy the common needs of security applications. By extracting security-related properties from binary programs directly, BitBlaze enables a principled, root-cause based approach to computer security, offering novel and effective solutions, as demonstrated with over a dozen different security applications.</p><h3 class="c-article__sub-heading">Keywords</h3><ul class="c-article-subject-list"><li class="c-article-subject-list__subject"><span>Binary analysis</span></li><li class="c-article-subject-list__subject"><span>malware analysis and defense</span></li><li class="c-article-subject-list__subject"><span>vulnerability analysis and defense</span></li><li class="c-article-subject-list__subject"><span>reverse engineering</span></li></ul></div></div></section>
+                    
+                
+
+                
+                    
+                        
+                            <div class="c-notes" data-test="preview-sub-content-access-via-institution">
+                                <p class="c-notes__text">This is a preview of subscription content, <a id="test-login-banner-link" href="//wayf.springernature.com?redirect_uri&#x3D;https%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%2F978-3-540-89862-7_1" data-track="click" data-track-action="login" data-track-label="link">access via your institution</a>.</p>
+                            </div>
+                        
+                    
+                    
+                        
+                            <div data-test="buy-box-mobile" class="c-article-buy-box--article u-mb-24">
+                                <div class="sprcom-buybox buybox" id="sprcom-buybox">
+ <div>
+  <div class="c-box" style="padding: 0">
+   <h2 class="c-box__heading visually-hidden">Buying options</h2>
+   <div class="buying-options">
+    <div class="buying-option expanded">
+     <dl class="buying-option-price">
+      <dt>
+       <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M11.782 11L9.3 8.518c-.393-.392-.4-1.022-.02-1.403a1.001 1.001 0 011.417 0l4.176 4.177a1.001 1.001 0 010 1.416l-4.176 4.177a.991.991 0 01-1.4.016 1 1 0 01.003-1.42L11.782 13l1.013-.998L11.782 11z" fill="#666" fill-rule="evenodd"></path>
+       </svg> Chapter
+      </dt>
+      <dd class="price-amount">
+       <div data-test-id="test-chapter-price" class="buybox__price">
+        EUR &nbsp; 24.95
+       </div>
+      </dd>
+      <dd class="price-info">
+       Price excludes VAT (Hong Kong/P.R.China)
+      </dd>
+     </dl>
+     <form class="buying-option-form" action="https://order.springer.com/public/cart" method="post"><input type="hidden" name="type" value="chapter"> <input type="hidden" name="doi" value="10.1007/978-3-540-89862-7_1"> <input type="hidden" name="isxn" value="978-3-540-89862-7"> <input type="hidden" name="contenttitle" value="BitBlaze: A New Approach to Computer Security via Binary Analysis"> <input type="hidden" name="copyrightyear" value="2008"> <input type="hidden" name="year" value=""> <input type="hidden" name="authors" value="Dawn Song, et al."> <input type="hidden" name="title" value="Information Systems Security"> <input type="hidden" name="mac" value="cdbb09a1b66d7c6fcc7f41807f04274f">
+      <ul class="buying-option-usps">
+       <li>DOI: 10.1007/978-3-540-89862-7_1</li>
+       <li>Chapter length: 25 pages</li>
+       <li>Instant PDF download</li>
+       <li>Readable on all devices</li>
+       <li>Own it forever</li>
+       <li>Exclusive offer for individuals only</li>
+       <li>Tax calculation will be finalised during checkout</li>
+      </ul> <button type="submit" class="buybox__buy-button c-button c-button--blue" value="Submit" data-track="click" data-track-action="buy pdf" data-track-label="buy chapter action" onclick="dataLayer.push({&quot;event&quot;:&quot;addToCart&quot;,&quot;ecommerce&quot;:{&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;add&quot;:{&quot;products&quot;:[{&quot;name&quot;:&quot;BitBlaze: A New Approach to Computer Security via Binary Analysis&quot;,&quot;id&quot;:&quot;10.1007/978-3-540-89862-7_1&quot;,&quot;price&quot;:24.95,&quot;brand&quot;:&quot;Springer Berlin Heidelberg&quot;,&quot;category&quot;:&quot;Systems and Data Security&quot;,&quot;variant&quot;:&quot;ppv-chapter&quot;,&quot;quantity&quot;:1}]}}});">Buy Chapter</button>
+     </form>
+    </div>
+    <div class="buying-option expanded">
+     <dl class="buying-option-price">
+      <dt>
+       <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M11.782 11L9.3 8.518c-.393-.392-.4-1.022-.02-1.403a1.001 1.001 0 011.417 0l4.176 4.177a1.001 1.001 0 010 1.416l-4.176 4.177a.991.991 0 01-1.4.016 1 1 0 01.003-1.42L11.782 13l1.013-.998L11.782 11z" fill="#666" fill-rule="evenodd"></path>
+       </svg> eBook
+      </dt>
+      <dd class="price-amount">
+       EUR &nbsp; 58.84
+      </dd>
+      <dd class="price-info">
+       Price includes VAT (Hong Kong/P.R.China)
+      </dd>
+     </dl>
+     <form class="buying-option-form" action="https://order.springer.com/public/cart" method="post"><input type="hidden" name="type" value="ebook"> <input type="hidden" name="doi" value="10.1007/978-3-540-89862-7"> <input type="hidden" name="isxn" value="978-3-540-89862-7"> <input type="hidden" name="contenttitle" value="Information Systems Security">
+      <ul class="buying-option-usps">
+       <li>ISBN: 978-3-540-89862-7</li>
+       <li>Instant PDF download</li>
+       <li>Readable on all devices</li>
+       <li>Own it forever</li>
+       <li>Exclusive offer for individuals only</li>
+       <li>Tax calculation will be finalised during checkout</li>
+      </ul> <button type="submit" class="buybox__buy-button c-button c-button--blue" value="Submit" data-track="click" data-track-label="buy ebook" onclick="dataLayer.push({&quot;event&quot;:&quot;addToCart&quot;,&quot;ecommerce&quot;:{&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;add&quot;:{&quot;products&quot;:[{&quot;name&quot;:&quot;Information Systems Security&quot;,&quot;id&quot;:&quot;978-3-540-89862-7&quot;,&quot;price&quot;:54.99,&quot;brand&quot;:&quot;Springer Berlin Heidelberg&quot;,&quot;category&quot;:&quot;Systems and Data Security&quot;,&quot;variant&quot;:&quot;ebo&quot;,&quot;quantity&quot;:1}]}}});">Buy eBook</button>
+     </form>
+    </div>
+    <div class="buying-option expanded">
+     <dl class="buying-option-price">
+      <dt>
+       <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M11.782 11L9.3 8.518c-.393-.392-.4-1.022-.02-1.403a1.001 1.001 0 011.417 0l4.176 4.177a1.001 1.001 0 010 1.416l-4.176 4.177a.991.991 0 01-1.4.016 1 1 0 01.003-1.42L11.782 13l1.013-.998L11.782 11z" fill="#666" fill-rule="evenodd"></path>
+       </svg> Softcover Book
+      </dt>
+      <dd class="price-amount">
+       EUR &nbsp; 69.99
+      </dd>
+      <dd class="price-info">
+       Price excludes VAT (Hong Kong/P.R.China)
+      </dd>
+     </dl>
+     <form class="buying-option-form" action="https://order.springer.com/public/cart" method="post"><input type="hidden" name="type" value="book"> <input type="hidden" name="doi" value="10.1007/978-3-540-89862-7"> <input type="hidden" name="isxn" value="978-3-540-89861-0"> <input type="hidden" name="contenttitle" value="Information Systems Security">
+      <ul class="buying-option-usps">
+       <li>ISBN: 978-3-540-89861-0</li>
+       <li>Dispatched in 3 to 5 business days</li>
+       <li>Exclusive offer for individuals only</li>
+       <li>Free shipping worldwide<br><a href="https://support.springernature.com/en/support/solutions/articles/6000233448-coronavirus-disease-covid-19-delivery-information" target="_blank">Shipping restrictions may apply, check to see if you are impacted</a>.</li>
+       <li>Tax calculation will be finalised during checkout</li>
+      </ul> <button type="submit" class="buybox__buy-button c-button c-button--blue" value="Submit" data-track="click" data-track-label="buy softcover" onclick="dataLayer.push({&quot;event&quot;:&quot;addToCart&quot;,&quot;ecommerce&quot;:{&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;add&quot;:{&quot;products&quot;:[{&quot;name&quot;:&quot;Information Systems Security&quot;,&quot;id&quot;:&quot;978-3-540-89861-0&quot;,&quot;price&quot;:69.99,&quot;brand&quot;:&quot;Springer Berlin Heidelberg&quot;,&quot;category&quot;:&quot;Systems and Data Security&quot;,&quot;variant&quot;:&quot;print&quot;,&quot;quantity&quot;:1}]}}});">Buy Softcover Book</button>
+     </form>
+    </div>
+   </div>
+  </div>
+  <div class="c-box buybox-additional-info"><a class="c-box__item" href="https://www.springernature.com/gp/librarians/licensing/license-options">Learn about institutional subscriptions</a>
+  </div>
+ </div>
+ <style>
+                .sprcom-buybox {
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+                .sprcom-buybox > div {
+                    flex-grow: 1;
+                    width: 100%;
+                }
+
+                .sprcom-buybox * {
+                    font-size: 13px !important;
+                }
+
+                .sprcom-buybox > div > * + * {
+                    margin-top: 24px;
+                }
+
+                .sprcom-buybox .c-box__heading {
+                    margin-bottom: 0;
+                }
+
+
+                .sprcom-buybox .buying-options {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                .sprcom-buybox .buying-options > * {
+                    background-color: #ddd;
+                    box-shadow: 0 0 0 1px #bbb;
+                    flex-grow: 1;
+                    flex-basis: auto;
+                    width: 240px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+
+                .sprcom-buybox dt {
+                    align-items: center;
+                    display: flex;
+                    font-weight: 400;
+                    margin-left: -10px;
+                }
+
+                .sprcom-buybox .buying-option-form {
+                    padding: 12px;
+                }
+
+                .sprcom-buybox .buying-option-price {
+                    align-items: center;
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-size: 1.6rem;
+                    line-height: 1.4;
+                    user-select: none;
+                    padding: 6px 12px;
+                }
+
+                .sprcom-buybox .buying-option-price dt,
+                .sprcom-buybox .buying-option-price dt svg path,
+                .sprcom-buybox .buying-option-price dd {
+                    color: #004aa7;
+                    fill: #004aa7;
+                }
+
+                .sprcom-buybox .buying-option-price dt,
+                .sprcom-buybox .buying-option-price dd {
+                    flex-grow: 1;
+                }
+
+                .sprcom-buybox .buying-option-price .price-info {
+                    color: #666;
+                    font-size: 80%;
+                    text-align: right;
+                    width: 100%;
+                }
+
+                .sprcom-buybox .buying-option-price .price-amount {
+                    font-size: 140%;
+                    text-align: right;
+                    font-weight: 600;
+                }
+
+                .sprcom-buybox .buying-option-price .price-amount-without-discount {
+                    color: #c40606;
+                    font-size: 140%;
+                    text-decoration: line-through;
+                    width: 100%;
+                }
+
+                .sprcom-buybox .buying-option-price .price-type {
+                    font-size: 40%;
+                    margin-left: 8px;
+                }
+
+                .sprcom-buybox .buying-option-usps {
+                    color: #666;
+                    font-size: 1.4rem;
+                    line-height: 1.4;
+                    margin: 0 0 0 13px;
+                    padding-left: 16px;
+
+                    list-style: disc;
+                }
+
+                .sprcom-buybox .buying-option-usps > li {
+                    position: relative;
+                }
+
+                .sprcom-buybox .buying-option-usps > li:not(:first-child) {
+                    margin-top: 4px;
+                }
+
+                .sprcom-buybox .c-button {
+                    margin-top: 18px;
+                    text-align: center;
+                }
+
+                .sprcom-buybox .buying-options > .expanded {
+                    background-color: #fff;
+                }
+
+                .sprcom-buybox .buying-options > .expanded dt,
+                .sprcom-buybox .buying-options > .expanded dt svg path,
+                .sprcom-buybox .buying-options > .expanded .price-amount {
+                    color: #333;
+                    fill: #666;
+                }
+
+
+                .sprcom-buybox .buybox-additional-info {
+                    padding-top: 6px;
+                    padding-bottom: 8px;
+                }
+
+                .sprcom-buybox .buybox-additional-info .c-box__item {
+                    font-size: 13px !important;
+                    margin-bottom: 0;
+                }
+
+                .sprcom-buybox a:visited {
+                    color: #004b83;
+                }
+
+
+                .sprcom-buybox [role=button] {
+                    cursor: pointer;
+                }
+
+                .sprcom-buybox button:focus,
+                .sprcom-buybox [role=button]:focus {
+                    outline: 4px solid #fc0;
+                    position: relative;
+                }
+
+                .sprcom-buybox [aria-expanded=false] svg {
+                    transform: rotate(0deg);
+                }
+
+                .sprcom-buybox [aria-expanded=true] svg {
+                    transform: rotate(90deg);
+                }
+
+                .sprcom-buybox dt {
+                    align-items: center;
+                    display: flex;
+                }
+
+
+                .sprcom-buybox .visually-hidden {
+                    clip: rect(1px, 1px, 1px, 1px);
+                    height: 1px;
+                    overflow: hidden;
+                    position: absolute;
+                    width: 1px;
+                }
+
+                .sprcom-buybox style {
+                    display: none;
+                }
+            </style>
+ <script>
+                ;(function () {
+                    var timestamp = Date.now()
+                    document.write('<div data-id="id_'+ timestamp +'"></div>')
+
+                    var head = document.getElementsByTagName("head")[0]
+                    var script = document.createElement("script")
+                    script.type = "text/javascript"
+                    script.src = "https://buy.springer.com/assets/js/buybox-bundle-abe5f44a67.js"
+                    script.id = "ecommerce-scripts-" + timestamp
+                    head.appendChild(script)
+
+                    var buybox = document.querySelector("[data-id=id_"+ timestamp +"]").parentNode
+
+                    ;[].slice.call(buybox.querySelectorAll(".buying-option")).forEach(initCollapsibles)
+
+                    function initCollapsibles(subscription, index) {
+                        var toggle = subscription.querySelector(".buying-option-price")
+                        subscription.classList.remove("expanded")
+                        var form = subscription.querySelector(".buying-option-form")
+
+                        if (form) {
+                            var formAction = form.getAttribute("action")
+                            document.querySelector("#ecommerce-scripts-" + timestamp).addEventListener("load", bindModal(form, formAction, timestamp, index), false)
+                        }
+
+                        var priceInfo = subscription.querySelector(".price-info")
+                        var buyingOption = toggle.parentElement
+
+                        if (toggle && form && priceInfo) {
+                            toggle.setAttribute("role", "button")
+                            toggle.setAttribute("tabindex", "0")
+
+                            toggle.addEventListener("click", function (event) {
+                                var expanded = toggle.getAttribute("aria-expanded") === "true" || false
+                                toggle.setAttribute("aria-expanded", !expanded)
+                                form.hidden = expanded
+                                if (!expanded) {
+                                    buyingOption.classList.add("expanded")
+                                } else {
+                                    buyingOption.classList.remove("expanded")
+                                }
+                                priceInfo.hidden = expanded
+                            }, false)
+                        }
+                    }
+
+                    function bindModal(form, formAction, timestamp, index) {
+                        var weHasBrowserSupport = window.fetch && Array.from
+
+                        return function() {
+                            var Buybox = EcommScripts ? EcommScripts.Buybox : null
+                            var Modal = EcommScripts ? EcommScripts.Modal : null
+
+                            if (weHasBrowserSupport && Buybox && Modal) {
+                                var modalID = "ecomm-modal_" + timestamp + "_" + index
+
+                                var modal = new Modal(modalID)
+                                modal.domEl.addEventListener("close", close)
+                                function close() {
+                                    form.querySelector("button[type=submit]").focus()
+                                }
+
+                                var cartURL = "/cart"
+                                var cartModalURL = "/cart?messageOnly=1"
+
+                                form.setAttribute(
+                                    "action",
+                                    formAction.replace(cartURL, cartModalURL)
+                                )
+
+                                var formSubmit = Buybox.interceptFormSubmit(
+                                    Buybox.fetchFormAction(window.fetch),
+                                    Buybox.triggerModalAfterAddToCartSuccess(modal),
+                                    function() {
+                                        form.removeEventListener("submit", formSubmit, false)
+                                        form.setAttribute(
+                                            "action",
+                                            formAction.replace(cartModalURL, cartURL)
+                                        )
+                                        form.submit()
+                                    }
+                                )
+                                
+                                form.addEventListener("submit", formSubmit, false)
+
+                                document.body.appendChild(modal.domEl)
+                            }
+                        }
+                    }
+
+                    function initKeyControls() {
+                        document.addEventListener("keydown", function (event) {
+                            if (document.activeElement.classList.contains("buying-option-price") && (event.code === "Space" || event.code === "Enter")) {
+                                if (document.activeElement) {
+                                    event.preventDefault()
+                                    document.activeElement.click()
+                                }
+                            }
+                        }, false)
+                    }
+
+                    function initialStateOpen() {
+                        var buyboxWidth = buybox.offsetWidth
+                        ;[].slice.call(buybox.querySelectorAll(".buying-option")).forEach(function (option, index) {
+                            var toggle = option.querySelector(".buying-option-price")
+                            var form = option.querySelector(".buying-option-form")
+                            var priceInfo = option.querySelector(".price-info")
+                            if (buyboxWidth > 480) {
+                                toggle.click()
+                            } else {
+                                if (index === 0) {
+                                    toggle.click()
+                                } else {
+                                    toggle.setAttribute("aria-expanded", "false")
+                                    form.hidden = "hidden"
+                                    priceInfo.hidden = "hidden"
+                                }
+                            }
+                        })
+                    }
+
+                    initialStateOpen()
+
+                    if (window.buyboxInitialised) return
+                    window.buyboxInitialised = true
+
+                    initKeyControls()
+                })()
+            </script>
+</div>
+                            </div>
+                        
+                    
+                    <div class="u-display-none">
+                        
+                    </div>
+                
+
+                
+                    <section>
+                        <div class="c-article-section c-pdf-preview" id="preview-section">
+                            <h2 class="c-article-section__title  js-section-title js-c-reading-companion-sections-item" id="preview">Preview</h2>
+                            <div class="c-article-section__content">
+                                <object class="c-pdf-preview__embed c-pdf-preview__embed--height"
+                                        data="//page-one.springer.com/pdf/preview/10.1007/978-3-540-89862-7_1"
+                                        type="application/pdf" width="100%">
+                                    <p data-fallback-text="true">Unable to display preview.&nbsp;<a href="//page-one.springer.com/pdf/preview/10.1007/978-3-540-89862-7_1">Download preview PDF.</a></p>
+                                </object>
+                                <p class="c-pdf-preview__info">Unable to display preview.&nbsp;<a href="//page-one.springer.com/pdf/preview/10.1007/978-3-540-89862-7_1">Download preview PDF.</a></p>
+                            </div>
+                        </div>
+                    </section>
+                
+
+                
+                <div data-test="chapter-cobranding-and-download">
+                    
+                </div>
+
+                
+
+                
+
+                <div id="MagazineFulltextChapterBodySuffix"><section aria-labelledby="Bib1" data-title="References"><div class="c-article-section" id="Bib1-section"><h2 id="Bib1" class="c-article-section__title js-section-title js-c-reading-companion-sections-item">References</h2><div class="c-article-section__content" id="Bib1-content"><div data-container-section="references"><ol class="c-article-references"><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="1."><p class="c-article-references__text" id="ref-CR1">CVC Lite documentation (Page checked 7/26/2008), <a href="http://www.cs.nyu.edu/acsys/cvcl/doc/">
+                      <span class="c-literal">http://www.cs.nyu.edu/acsys/cvcl/doc/</span>
+                    </a>
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="2."><p class="c-article-references__text" id="ref-CR2">The DOT language (Page checked 7/26/2008), <a href="http://www.graphviz.org/doc/info/lang.html">
+                      <span class="c-literal">http://www.graphviz.org/doc/info/lang.html</span>
+                    </a>
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="3."><p class="c-article-references__text" id="ref-CR3">On the run - building dynamic modifiers for optimization, detection, and security. Original DynamoRIO announcement via PLDI tutorial (June 2002)</p><p class="c-article-references__links u-hide-print" id="ref-CR3-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=On%20the%20run%20-%20building%20dynamic%20modifiers%20for%20optimization%2C%20detection%2C%20and%20security.%20Original%20DynamoRIO%20announcement%20via%20PLDI%20tutorial%20%28June%202002%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="4."><p class="c-article-references__text" id="ref-CR4">ARM. ARM Architecture Reference Manual (2005) Doc. No. DDI-0100I</p><p class="c-article-references__links u-hide-print" id="ref-CR4-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=ARM.%20ARM%20Architecture%20Reference%20Manual%20%282005%29%20Doc.%20No.%20DDI-0100I">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="5."><p class="c-article-references__text" id="ref-CR5">Balakrishnan, G.: WYSINWYX: What You See Is Not What You eXecute. PhD thesis, Computer Science Department, University of Wisconsin at Madison (August 2007)</p><p class="c-article-references__links u-hide-print" id="ref-CR5-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Balakrishnan%2C%20G.%3A%20WYSINWYX%3A%20What%20You%20See%20Is%20Not%20What%20You%20eXecute.%20PhD%20thesis%2C%20Computer%20Science%20Department%2C%20University%20of%20Wisconsin%20at%20Madison%20%28August%202007%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="6."><p class="c-article-references__text" id="ref-CR6">Balakrishnan, G., Gruian, R., Reps, T., Teitelbaum, T.: Codesurfer/x86 - a platform for analyzing x86 executables. In: Proceedings of the International Conference on Compiler Construction (April 2005)</p><p class="c-article-references__links u-hide-print" id="ref-CR6-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Balakrishnan%2C%20G.%2C%20Gruian%2C%20R.%2C%20Reps%2C%20T.%2C%20Teitelbaum%2C%20T.%3A%20Codesurfer%2Fx86%20-%20a%20platform%20for%20analyzing%20x86%20executables.%20In%3A%20Proceedings%20of%20the%20International%20Conference%20on%20Compiler%20Construction%20%28April%202005%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="7."><p class="c-article-references__text" id="ref-CR7">Brumley, D., Caballero, J., Liang, Z., Newsome, J., Song, D.: Towards automatic discovery of deviations in binary implementations with applications to error detection and fingerprint generation. In: Proceedings of the USENIX Security Symposium, Boston, MA (August 2007)</p><p class="c-article-references__links u-hide-print" id="ref-CR7-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Brumley%2C%20D.%2C%20Caballero%2C%20J.%2C%20Liang%2C%20Z.%2C%20Newsome%2C%20J.%2C%20Song%2C%20D.%3A%20Towards%20automatic%20discovery%20of%20deviations%20in%20binary%20implementations%20with%20applications%20to%20error%20detection%20and%20fingerprint%20generation.%20In%3A%20Proceedings%20of%20the%20USENIX%20Security%20Symposium%2C%20Boston%2C%20MA%20%28August%202007%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="8."><p class="c-article-references__text" id="ref-CR8">Brumley, D., Hartwig, C., Kang, M.G., Liang, Z., Newsome, J., Poosankam, P., Song, D.: Bitscope: Automatically dissecting malicious binaries. Technical Report CS-07-133, School of Computer Science, Carnegie Mellon University (March 2007)</p><p class="c-article-references__links u-hide-print" id="ref-CR8-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Brumley%2C%20D.%2C%20Hartwig%2C%20C.%2C%20Kang%2C%20M.G.%2C%20Liang%2C%20Z.%2C%20Newsome%2C%20J.%2C%20Poosankam%2C%20P.%2C%20Song%2C%20D.%3A%20Bitscope%3A%20Automatically%20dissecting%20malicious%20binaries.%20Technical%20Report%20CS-07-133%2C%20School%20of%20Computer%20Science%2C%20Carnegie%20Mellon%20University%20%28March%202007%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="9."><p class="c-article-references__text" id="ref-CR9">Brumley, D., Hartwig, C., Liang, Z., Newsome, J., Poosankam, P., Song, D., Yin, H.: Automatically identifying trigger-based behavior in malware. In: Lee, W., Wang, C., Dagon, D. (eds.) Botnet Detection. Countering the Largest Security Threat Series: Advances in Information Security, vol. 36, Springer, Heidelberg (2008)</p><p class="c-article-references__links u-hide-print" id="ref-CR9-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://doi.org/10.1007%2F978-0-387-68768-1_4" aria-label="CrossRef reference 9">CrossRef</a> 
+    <a data-track="click" data-track-action="outbound reference" data-track-label="link" aria-label="Google Scholar reference 9" href="https://scholar.google.com/scholar_lookup?&amp;title=Automatically%20identifying%20trigger-based%20behavior%20in%20malware&amp;publication_year=2008&amp;author=Brumley%2CD.&amp;author=Hartwig%2CC.&amp;author=Liang%2CZ.&amp;author=Newsome%2CJ.&amp;author=Poosankam%2CP.&amp;author=Song%2CD.&amp;author=Yin%2CH.">
+                    Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="10."><p class="c-article-references__text" id="ref-CR10">Brumley, D., Hartwig, C., Liang, Z., Newsome, J., Song, D., Yin, H.: Towards automatically identifying trigger-based behavior in malware using symbolic execution and binary analysis. Technical Report CMU-CS-07-105, Carnegie Mellon University School of Computer Science (January 2007)</p><p class="c-article-references__links u-hide-print" id="ref-CR10-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Brumley%2C%20D.%2C%20Hartwig%2C%20C.%2C%20Liang%2C%20Z.%2C%20Newsome%2C%20J.%2C%20Song%2C%20D.%2C%20Yin%2C%20H.%3A%20Towards%20automatically%20identifying%20trigger-based%20behavior%20in%20malware%20using%20symbolic%20execution%20and%20binary%20analysis.%20Technical%20Report%20CMU-CS-07-105%2C%20Carnegie%20Mellon%20University%20School%20of%20Computer%20Science%20%28January%202007%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="11."><p class="c-article-references__text" id="ref-CR11">Brumley, D., Newsome, J., Song, D., Wang, H., Jha, S.: Towards automatic generation of vulnerability-based signatures. In: Proceedings of the 2006 IEEE Symposium on Security and Privacy, pp. 2–16 (2006)</p><p class="c-article-references__links u-hide-print" id="ref-CR11-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Brumley%2C%20D.%2C%20Newsome%2C%20J.%2C%20Song%2C%20D.%2C%20Wang%2C%20H.%2C%20Jha%2C%20S.%3A%20Towards%20automatic%20generation%20of%20vulnerability-based%20signatures.%20In%3A%20Proceedings%20of%20the%202006%20IEEE%20Symposium%20on%20Security%20and%20Privacy%2C%20pp.%202%E2%80%9316%20%282006%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="12."><p class="c-article-references__text" id="ref-CR12">Brumley, D., Poosankam, P., Song, D., Zheng, J.: Automatic patch-based exploit generation is possible: Techniques and implications. In: Proceedings of the 2008 IEEE Symposium on Security and Privacy (2008)</p><p class="c-article-references__links u-hide-print" id="ref-CR12-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Brumley%2C%20D.%2C%20Poosankam%2C%20P.%2C%20Song%2C%20D.%2C%20Zheng%2C%20J.%3A%20Automatic%20patch-based%20exploit%20generation%20is%20possible%3A%20Techniques%20and%20implications.%20In%3A%20Proceedings%20of%20the%202008%20IEEE%20Symposium%20on%20Security%20and%20Privacy%20%282008%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="13."><p class="c-article-references__text" id="ref-CR13">Brumley, D., Wang, H., Jha, S., Song, D.: Creating vulnerability signatures using weakest pre-conditions. In: Proceedings of Computer Security Foundations Symposium (July 2007)</p><p class="c-article-references__links u-hide-print" id="ref-CR13-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Brumley%2C%20D.%2C%20Wang%2C%20H.%2C%20Jha%2C%20S.%2C%20Song%2C%20D.%3A%20Creating%20vulnerability%20signatures%20using%20weakest%20pre-conditions.%20In%3A%20Proceedings%20of%20Computer%20Security%20Foundations%20Symposium%20%28July%202007%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="14."><p class="c-article-references__text" id="ref-CR14">Caballero, J., Yin, H., Liang, Z., Song, D.: Polyglot: Automatic extraction of protocol message format using dynamic binary analysis. In: Proceedings of the 14th ACM Conferences on Computer and Communication Security (CCS 2007) (October 2007)</p><p class="c-article-references__links u-hide-print" id="ref-CR14-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Caballero%2C%20J.%2C%20Yin%2C%20H.%2C%20Liang%2C%20Z.%2C%20Song%2C%20D.%3A%20Polyglot%3A%20Automatic%20extraction%20of%20protocol%20message%20format%20using%20dynamic%20binary%20analysis.%20In%3A%20Proceedings%20of%20the%2014th%20ACM%20Conferences%20on%20Computer%20and%20Communication%20Security%20%28CCS%202007%29%20%28October%202007%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="15."><p class="c-article-references__text" id="ref-CR15">Caballero, J., Yin, H., Liang, Z., Song, D.: Polyglot: Automatic extraction of protocol message format using dynamic binary analysis. In: Proceedings of the ACM Conference on Computer and Communications Security (October 2007)</p><p class="c-article-references__links u-hide-print" id="ref-CR15-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Caballero%2C%20J.%2C%20Yin%2C%20H.%2C%20Liang%2C%20Z.%2C%20Song%2C%20D.%3A%20Polyglot%3A%20Automatic%20extraction%20of%20protocol%20message%20format%20using%20dynamic%20binary%20analysis.%20In%3A%20Proceedings%20of%20the%20ACM%20Conference%20on%20Computer%20and%20Communications%20Security%20%28October%202007%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="16."><p class="c-article-references__text" id="ref-CR16">Chow, J., Pfaff, B., Garfinkel, T., Christopher, K., Rosenblum, M.: Understanding data lifetime via whole system simulation. In: Proceedings of the 13th USENIX Security Symposium (Security 2004) (August 2004)</p><p class="c-article-references__links u-hide-print" id="ref-CR16-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Chow%2C%20J.%2C%20Pfaff%2C%20B.%2C%20Garfinkel%2C%20T.%2C%20Christopher%2C%20K.%2C%20Rosenblum%2C%20M.%3A%20Understanding%20data%20lifetime%20via%20whole%20system%20simulation.%20In%3A%20Proceedings%20of%20the%2013th%20USENIX%20Security%20Symposium%20%28Security%202004%29%20%28August%202004%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="17."><p class="c-article-references__text" id="ref-CR17">Costa, M., Crowcroft, J., Castro, M., Rowstron, A., Zhou, L., Zhang, L., Barham, P.: Vigilante: End-to-end containment of internet worms. In: In Proceedings of the Symposium on Systems and Operating Systems Principles (SOSP 2005) (2005)</p><p class="c-article-references__links u-hide-print" id="ref-CR17-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Costa%2C%20M.%2C%20Crowcroft%2C%20J.%2C%20Castro%2C%20M.%2C%20Rowstron%2C%20A.%2C%20Zhou%2C%20L.%2C%20Zhang%2C%20L.%2C%20Barham%2C%20P.%3A%20Vigilante%3A%20End-to-end%20containment%20of%20internet%20worms.%20In%3A%20In%20Proceedings%20of%20the%20Symposium%20on%20Systems%20and%20Operating%20Systems%20Principles%20%28SOSP%202005%29%20%282005%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="18."><p class="c-article-references__text" id="ref-CR18">Crandall, J.R., Chong, F.T.: Minos: Control data attack prevention orthogonal to memory model. In: Proceedings of the 37th International Symposium on Microarchitecture (MICRO 2004) (December 2004)</p><p class="c-article-references__links u-hide-print" id="ref-CR18-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Crandall%2C%20J.R.%2C%20Chong%2C%20F.T.%3A%20Minos%3A%20Control%20data%20attack%20prevention%20orthogonal%20to%20memory%20model.%20In%3A%20Proceedings%20of%20the%2037th%20International%20Symposium%20on%20Microarchitecture%20%28MICRO%202004%29%20%28December%202004%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="19."><p class="c-article-references__text" id="ref-CR19">DataRescue. IDA Pro. (Page checked 7/31/2008), <a href="http://www.datarescue.com">
+                      <span class="c-literal">http://www.datarescue.com</span>
+                    </a>
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="20."><p class="c-article-references__text" id="ref-CR20">Dijkstra, E.W.: A Discipline of Programming. Prentice Hall, Englewood Cliffs (1976)</p><p class="c-article-references__links u-hide-print" id="ref-CR20-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="http://www.emis.de/MATH-item?0368.68005" aria-label="MATH reference 20">MATH</a> 
+    <a data-track="click" data-track-action="outbound reference" data-track-label="link" aria-label="Google Scholar reference 20" href="https://scholar.google.com/scholar_lookup?&amp;title=A%20Discipline%20of%20Programming&amp;publication_year=1976&amp;author=Dijkstra%2CE.W.">
+                    Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="21."><p class="c-article-references__text" id="ref-CR21">Ganesh, V., Dill, D.: STP: A decision procedure for bitvectors and arrays, <a href="http://theory.stanford.edu/~vganesh/stp">
+                      <span class="c-literal">http://theory.stanford.edu/~vganesh/stp</span>
+                    </a>
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="22."><p class="c-article-references__text" id="ref-CR22">Ganesh, V., Dill, D.L.: A decision procedure for bit-vectors and arrays. In: Damm, W., Hermanns, H. (eds.) CAV 2007. LNCS, vol. 4590, pp. 524–536. Springer, Heidelberg (2007)</p><p class="c-article-references__links u-hide-print" id="ref-CR22-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://doi.org/10.1007%2F978-3-540-73368-3_52" aria-label="CrossRef reference 22">CrossRef</a> 
+    <a data-track="click" data-track-action="outbound reference" data-track-label="link" aria-label="Google Scholar reference 22" href="https://scholar.google.com/scholar_lookup?&amp;title=A%20decision%20procedure%20for%20bit-vectors%20and%20arrays&amp;pages=524-536&amp;publication_year=2007&amp;author=Ganesh%2CV.&amp;author=Dill%2CD.L.">
+                    Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="23."><p class="c-article-references__text" id="ref-CR23">Intel Corporation. Intel 64 and IA-32 Architectures Software Developer’s Manual, Volumes 1-5 (April 2008)</p><p class="c-article-references__links u-hide-print" id="ref-CR23-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Intel%20Corporation.%20Intel%2064%20and%20IA-32%20Architectures%20Software%20Developer%E2%80%99s%20Manual%2C%20Volumes%201-5%20%28April%202008%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="24."><p class="c-article-references__text" id="ref-CR24">Jackson, D., Rollins, E.J.: Chopping: A generalization of slicing. Technical Report CS-94-169, Carnegie Mellon University School of Computer Science (1994)</p><p class="c-article-references__links u-hide-print" id="ref-CR24-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Jackson%2C%20D.%2C%20Rollins%2C%20E.J.%3A%20Chopping%3A%20A%20generalization%20of%20slicing.%20Technical%20Report%20CS-94-169%2C%20Carnegie%20Mellon%20University%20School%20of%20Computer%20Science%20%281994%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="25."><p class="c-article-references__text" id="ref-CR25">Kang, M.G., Poosankam, P., Yin, H.: Renovo: A hidden code extractor for packed executables. In: Proceedings of the 5th ACM Workshop on Recurring Malcode (WORM 2007) (October 2007)</p><p class="c-article-references__links u-hide-print" id="ref-CR25-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Kang%2C%20M.G.%2C%20Poosankam%2C%20P.%2C%20Yin%2C%20H.%3A%20Renovo%3A%20A%20hidden%20code%20extractor%20for%20packed%20executables.%20In%3A%20Proceedings%20of%20the%205th%20ACM%20Workshop%20on%20Recurring%20Malcode%20%28WORM%202007%29%20%28October%202007%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="26."><p class="c-article-references__text" id="ref-CR26">Kruegel, C., Robertson, W., Valeur, F., Vigna, G.: Static disassembly of obfuscated binaries. In: Proceedings of the USENIX Security Symposium (2004)</p><p class="c-article-references__links u-hide-print" id="ref-CR26-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Kruegel%2C%20C.%2C%20Robertson%2C%20W.%2C%20Valeur%2C%20F.%2C%20Vigna%2C%20G.%3A%20Static%20disassembly%20of%20obfuscated%20binaries.%20In%3A%20Proceedings%20of%20the%20USENIX%20Security%20Symposium%20%282004%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="27."><p class="c-article-references__text" id="ref-CR27">Luk, C.-K., Cohn, R., Muth, R., Patil, H., Klauser, A., Lowney, G., Wallace, S., Reddi, V.J., Hazelwood, K.: Pin: Building customized program analysis tools with dynamic instrumentation. In: Proceedings of the ACM Conference on Programming Language Design and Implementation (June 2005)</p><p class="c-article-references__links u-hide-print" id="ref-CR27-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Luk%2C%20C.-K.%2C%20Cohn%2C%20R.%2C%20Muth%2C%20R.%2C%20Patil%2C%20H.%2C%20Klauser%2C%20A.%2C%20Lowney%2C%20G.%2C%20Wallace%2C%20S.%2C%20Reddi%2C%20V.J.%2C%20Hazelwood%2C%20K.%3A%20Pin%3A%20Building%20customized%20program%20analysis%20tools%20with%20dynamic%20instrumentation.%20In%3A%20Proceedings%20of%20the%20ACM%20Conference%20on%20Programming%20Language%20Design%20and%20Implementation%20%28June%202005%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="28."><p class="c-article-references__text" id="ref-CR28">Microsoft. Phoenix framework (Paged checked 7/31/2008), <a href="http://research.microsoft.com/phoenix/">
+                      <span class="c-literal">http://research.microsoft.com/phoenix/</span>
+                    </a>
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="29."><p class="c-article-references__text" id="ref-CR29">Microsoft. Phoenix project architect posting (Page checked 7/31/2008) (July 2008), <a href="http://forums.msdn.microsoft.com/en-US/phoenix/thread/90f5212c-05a-4aea-9a8f-a5840a6d101d">
+                      <span class="c-literal">http://forums.msdn.microsoft.com/en-US/phoenix/thread/90f5212c-05a-4aea-9a8f-a5840a6d101d</span>
+                    </a>
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="30."><p class="c-article-references__text" id="ref-CR30">Muchnick, S.S.: Advanced Compiler Design and Implementation. Academic Press, London (1997)</p><p class="c-article-references__links u-hide-print" id="ref-CR30-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" aria-label="Google Scholar reference 30" href="https://scholar.google.com/scholar_lookup?&amp;title=Advanced%20Compiler%20Design%20and%20Implementation&amp;publication_year=1997&amp;author=Muchnick%2CS.S.">
+                    Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="31."><p class="c-article-references__text" id="ref-CR31">Nethercote, N.: Dynamic Binary Analysis and Instrumentation or Building Tools is Easy. PhD thesis, Trinity College, University of Cambridge (2004)</p><p class="c-article-references__links u-hide-print" id="ref-CR31-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Nethercote%2C%20N.%3A%20Dynamic%20Binary%20Analysis%20and%20Instrumentation%20or%20Building%20Tools%20is%20Easy.%20PhD%20thesis%2C%20Trinity%20College%2C%20University%20of%20Cambridge%20%282004%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="32."><p class="c-article-references__text" id="ref-CR32">Newsome, J., Brumley, D., Franklin, J., Song, D.: Replayer: Automatic protocol replay by binary analysis. In: Write, R., De Capitani di Vimercati, S., Shmatikov, V. (eds.) Proceedings of the ACM Conference on Computer and Communications Security, pp. 311–321 (2006) </p><p class="c-article-references__links u-hide-print" id="ref-CR32-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Newsome%2C%20J.%2C%20Brumley%2C%20D.%2C%20Franklin%2C%20J.%2C%20Song%2C%20D.%3A%20Replayer%3A%20Automatic%20protocol%20replay%20by%20binary%20analysis.%20In%3A%20Write%2C%20R.%2C%20De%20Capitani%20di%20Vimercati%2C%20S.%2C%20Shmatikov%2C%20V.%20%28eds.%29%20Proceedings%20of%20the%20ACM%20Conference%20on%20Computer%20and%20Communications%20Security%2C%20pp.%20311%E2%80%93321%20%282006%29%20">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="33."><p class="c-article-references__text" id="ref-CR33">Newsome, J., Brumley, D., Song, D.: Sting: An end-to-end self-healing system for defending against zero-day worm attacks. Technical Report CMU-CS-05-191, Carnegie Mellon University School of Computer Science (2006)</p><p class="c-article-references__links u-hide-print" id="ref-CR33-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Newsome%2C%20J.%2C%20Brumley%2C%20D.%2C%20Song%2C%20D.%3A%20Sting%3A%20An%20end-to-end%20self-healing%20system%20for%20defending%20against%20zero-day%20worm%20attacks.%20Technical%20Report%20CMU-CS-05-191%2C%20Carnegie%20Mellon%20University%20School%20of%20Computer%20Science%20%282006%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="34."><p class="c-article-references__text" id="ref-CR34">Newsome, J., Brumley, D., Song, D.: Vulnerability-specific execution filtering for exploit prevention on commodity software. In: Proceedings of the 13th Annual Network and Distributed Systems Security Symposium, NDSS (2006)</p><p class="c-article-references__links u-hide-print" id="ref-CR34-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Newsome%2C%20J.%2C%20Brumley%2C%20D.%2C%20Song%2C%20D.%3A%20Vulnerability-specific%20execution%20filtering%20for%20exploit%20prevention%20on%20commodity%20software.%20In%3A%20Proceedings%20of%20the%2013th%20Annual%20Network%20and%20Distributed%20Systems%20Security%20Symposium%2C%20NDSS%20%282006%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="35."><p class="c-article-references__text" id="ref-CR35">Newsome, J., Song, D.: Dynamic taint analysis for automatic detection, analysis, and signature generation of exploits on commodity software. In: Proceedings of the 12th Annual Network and Distributed System Security Symposium (NDSS 2005) (February 2005)</p><p class="c-article-references__links u-hide-print" id="ref-CR35-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Newsome%2C%20J.%2C%20Song%2C%20D.%3A%20Dynamic%20taint%20analysis%20for%20automatic%20detection%2C%20analysis%2C%20and%20signature%20generation%20of%20exploits%20on%20commodity%20software.%20In%3A%20Proceedings%20of%20the%2012th%20Annual%20Network%20and%20Distributed%20System%20Security%20Symposium%20%28NDSS%202005%29%20%28February%202005%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="36."><p class="c-article-references__text" id="ref-CR36">Qemu, <a href="http://fabrice.bellard.free.fr/qemu/">
+                      <span class="c-literal">http://fabrice.bellard.free.fr/qemu/</span>
+                    </a>
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="37."><p class="c-article-references__text" id="ref-CR37">Simpson, L.T.: Value-Driven Redundancy Elimination. PhD thesis, Rice University Department of Computer Science (1996)</p><p class="c-article-references__links u-hide-print" id="ref-CR37-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Simpson%2C%20L.T.%3A%20Value-Driven%20Redundancy%20Elimination.%20PhD%20thesis%2C%20Rice%20University%20Department%20of%20Computer%20Science%20%281996%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="38."><p class="c-article-references__text" id="ref-CR38">Suh, G.E., Lee, J.W., Zhang, D., Devadas, S.: Secure program execution via dynamic information flow tracking. In: Proceedings of the 11th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2004) (October 2004)</p><p class="c-article-references__links u-hide-print" id="ref-CR38-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Suh%2C%20G.E.%2C%20Lee%2C%20J.W.%2C%20Zhang%2C%20D.%2C%20Devadas%2C%20S.%3A%20Secure%20program%20execution%20via%20dynamic%20information%20flow%20tracking.%20In%3A%20Proceedings%20of%20the%2011th%20International%20Conference%20on%20Architectural%20Support%20for%20Programming%20Languages%20and%20Operating%20Systems%20%28ASPLOS%202004%29%20%28October%202004%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="39."><p class="c-article-references__text" id="ref-CR39">Tridgell, A.: How samba was written (Checked on 8/21/2008) (August 2003), <a href="http://www.samba.org/ftp/tridge/misc/french_cafe.txt">
+                      <span class="c-literal">http://www.samba.org/ftp/tridge/misc/french_cafe.txt</span>
+                    </a>
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="40."><p class="c-article-references__text" id="ref-CR40">Tucek, J., Newsome, J., Lu, S., Huang, C., Xanthos, S., Brumley, D., Zhou, Y., Song, D.: Sweeper: A lightweight end-to-end system for defending against fast worms. In: Proceedings of the EuroSys Conference (2007)</p><p class="c-article-references__links u-hide-print" id="ref-CR40-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Tucek%2C%20J.%2C%20Newsome%2C%20J.%2C%20Lu%2C%20S.%2C%20Huang%2C%20C.%2C%20Xanthos%2C%20S.%2C%20Brumley%2C%20D.%2C%20Zhou%2C%20Y.%2C%20Song%2C%20D.%3A%20Sweeper%3A%20A%20lightweight%20end-to-end%20system%20for%20defending%20against%20fast%20worms.%20In%3A%20Proceedings%20of%20the%20EuroSys%20Conference%20%282007%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="41."><p class="c-article-references__text" id="ref-CR41">Valgrind, <a href="http://valgrind.org">
+                      <span class="c-literal">http://valgrind.org</span>
+                    </a>
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="42."><p class="c-article-references__text" id="ref-CR42">Yin, H., Liang, Z., Song, D.: HookFinder: Identifying and understanding malware hooking behaviors. In: Proceedings of the 15th Annual Network and Distributed System Security Symposium (NDSS 2008) (February 2008)</p><p class="c-article-references__links u-hide-print" id="ref-CR42-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Yin%2C%20H.%2C%20Liang%2C%20Z.%2C%20Song%2C%20D.%3A%20HookFinder%3A%20Identifying%20and%20understanding%20malware%20hooking%20behaviors.%20In%3A%20Proceedings%20of%20the%2015th%20Annual%20Network%20and%20Distributed%20System%20Security%20Symposium%20%28NDSS%202008%29%20%28February%202008%29">
+                        Google Scholar</a> 
+                </p></li><li class="c-article-references__item js-c-reading-companion-references-item" data-counter="43."><p class="c-article-references__text" id="ref-CR43">Yin, H., Song, D., Manuel, E., Kruegel, C., Kirda, E.: Panorama: Capturing system-wide information flow for malware detection and analysis. In: Proceedings of the 14th ACM Conferences on Computer and Communication Security (CCS 2007) (October 2007)</p><p class="c-article-references__links u-hide-print" id="ref-CR43-links"><a data-track="click" data-track-action="outbound reference" data-track-label="link" href="https://scholar.google.com/scholar?&amp;q=Yin%2C%20H.%2C%20Song%2C%20D.%2C%20Manuel%2C%20E.%2C%20Kruegel%2C%20C.%2C%20Kirda%2C%20E.%3A%20Panorama%3A%20Capturing%20system-wide%20information%20flow%20for%20malware%20detection%20and%20analysis.%20In%3A%20Proceedings%20of%20the%2014th%20ACM%20Conferences%20on%20Computer%20and%20Communication%20Security%20%28CCS%202007%29%20%28October%202007%29">
+                        Google Scholar</a> 
+                </p></li></ol><p class="c-article-references__download u-hide-print"><a data-track="click" data-track-action="download citation references" data-track-label="link" href="https://citation-needed.springer.com/v2/references/10.1007/978-3-540-89862-7_1?format=refman&amp;flavour=references">Download references<svg width="16" height="16" focusable="false" role="img" aria-hidden="true" class="u-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#global-icon-download"></use></svg></a></p></div></div></div></section></div><section aria-labelledby="author-information" data-title="Author information"><div class="c-article-section" id="author-information-section"><h2 id="author-information" class="c-article-section__title js-section-title js-c-reading-companion-sections-item">Author information</h2><div class="c-article-section__content" id="author-information-content"><h3 class="c-article__sub-heading" id="affiliations">Authors and Affiliations</h3><ol class="c-article-author-affiliation__list"><li id="Aff3"><p class="c-article-author-affiliation__address">UC Berkeley, USA</p><p class="c-article-author-affiliation__authors-list">Dawn Song, Heng Yin, Juan Caballero, Min Gyung Kang, Pongsin Poosankam &amp; Prateek Saxena</p></li><li id="Aff4"><p class="c-article-author-affiliation__address">Carnegie Mellon University, USA</p><p class="c-article-author-affiliation__authors-list">David Brumley, Heng Yin, Juan Caballero, Ivan Jager, Min Gyung Kang, Zhenkai Liang, James Newsome &amp; Pongsin Poosankam</p></li><li id="Aff5"><p class="c-article-author-affiliation__address">College of William and Mary, USA</p><p class="c-article-author-affiliation__authors-list">Heng Yin</p></li></ol><div class="u-js-hide u-hide-print" data-test="author-info"><span class="c-article__sub-heading">Authors</span><ol class="c-article-authors-search u-list-reset"><li id="auth-Dawn-Song"><span class="c-article-authors-search__title u-h3 js-search-name">Dawn Song</span><div class="c-article-authors-search__list"><div class="c-article-authors-search__item c-article-authors-search__list-item--left"><a href="/search?dc.creator=Dawn%20Song" class="c-article-button" data-track="click" data-track-action="author link - publication" data-track-label="link" rel="nofollow">View author publications</a></div><div class="c-article-authors-search__item c-article-authors-search__list-item--right"><p class="search-in-title-js c-article-authors-search__text">You can also search for this author in
+                        <span class="c-article-identifiers"><a class="c-article-identifiers__item" href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&amp;term=Dawn%20Song" data-track="click" data-track-action="author link - pubmed" data-track-label="link" rel="nofollow">PubMed</a><span class="u-hide"> </span><a class="c-article-identifiers__item" href="http://scholar.google.co.uk/scholar?as_q=&amp;num=10&amp;btnG=Search+Scholar&amp;as_epq=&amp;as_oq=&amp;as_eq=&amp;as_occt=any&amp;as_sauthors=%22Dawn%20Song%22&amp;as_publication=&amp;as_ylo=&amp;as_yhi=&amp;as_allsubj=all&amp;hl=en" data-track="click" data-track-action="author link - scholar" data-track-label="link" rel="nofollow">Google Scholar</a></span></p></div></div></li><li id="auth-David-Brumley"><span class="c-article-authors-search__title u-h3 js-search-name">David Brumley</span><div class="c-article-authors-search__list"><div class="c-article-authors-search__item c-article-authors-search__list-item--left"><a href="/search?dc.creator=David%20Brumley" class="c-article-button" data-track="click" data-track-action="author link - publication" data-track-label="link" rel="nofollow">View author publications</a></div><div class="c-article-authors-search__item c-article-authors-search__list-item--right"><p class="search-in-title-js c-article-authors-search__text">You can also search for this author in
+                        <span class="c-article-identifiers"><a class="c-article-identifiers__item" href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&amp;term=David%20Brumley" data-track="click" data-track-action="author link - pubmed" data-track-label="link" rel="nofollow">PubMed</a><span class="u-hide"> </span><a class="c-article-identifiers__item" href="http://scholar.google.co.uk/scholar?as_q=&amp;num=10&amp;btnG=Search+Scholar&amp;as_epq=&amp;as_oq=&amp;as_eq=&amp;as_occt=any&amp;as_sauthors=%22David%20Brumley%22&amp;as_publication=&amp;as_ylo=&amp;as_yhi=&amp;as_allsubj=all&amp;hl=en" data-track="click" data-track-action="author link - scholar" data-track-label="link" rel="nofollow">Google Scholar</a></span></p></div></div></li><li id="auth-Heng-Yin"><span class="c-article-authors-search__title u-h3 js-search-name">Heng Yin</span><div class="c-article-authors-search__list"><div class="c-article-authors-search__item c-article-authors-search__list-item--left"><a href="/search?dc.creator=Heng%20Yin" class="c-article-button" data-track="click" data-track-action="author link - publication" data-track-label="link" rel="nofollow">View author publications</a></div><div class="c-article-authors-search__item c-article-authors-search__list-item--right"><p class="search-in-title-js c-article-authors-search__text">You can also search for this author in
+                        <span class="c-article-identifiers"><a class="c-article-identifiers__item" href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&amp;term=Heng%20Yin" data-track="click" data-track-action="author link - pubmed" data-track-label="link" rel="nofollow">PubMed</a><span class="u-hide"> </span><a class="c-article-identifiers__item" href="http://scholar.google.co.uk/scholar?as_q=&amp;num=10&amp;btnG=Search+Scholar&amp;as_epq=&amp;as_oq=&amp;as_eq=&amp;as_occt=any&amp;as_sauthors=%22Heng%20Yin%22&amp;as_publication=&amp;as_ylo=&amp;as_yhi=&amp;as_allsubj=all&amp;hl=en" data-track="click" data-track-action="author link - scholar" data-track-label="link" rel="nofollow">Google Scholar</a></span></p></div></div></li><li id="auth-Juan-Caballero"><span class="c-article-authors-search__title u-h3 js-search-name">Juan Caballero</span><div class="c-article-authors-search__list"><div class="c-article-authors-search__item c-article-authors-search__list-item--left"><a href="/search?dc.creator=Juan%20Caballero" class="c-article-button" data-track="click" data-track-action="author link - publication" data-track-label="link" rel="nofollow">View author publications</a></div><div class="c-article-authors-search__item c-article-authors-search__list-item--right"><p class="search-in-title-js c-article-authors-search__text">You can also search for this author in
+                        <span class="c-article-identifiers"><a class="c-article-identifiers__item" href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&amp;term=Juan%20Caballero" data-track="click" data-track-action="author link - pubmed" data-track-label="link" rel="nofollow">PubMed</a><span class="u-hide"> </span><a class="c-article-identifiers__item" href="http://scholar.google.co.uk/scholar?as_q=&amp;num=10&amp;btnG=Search+Scholar&amp;as_epq=&amp;as_oq=&amp;as_eq=&amp;as_occt=any&amp;as_sauthors=%22Juan%20Caballero%22&amp;as_publication=&amp;as_ylo=&amp;as_yhi=&amp;as_allsubj=all&amp;hl=en" data-track="click" data-track-action="author link - scholar" data-track-label="link" rel="nofollow">Google Scholar</a></span></p></div></div></li><li id="auth-Ivan-Jager"><span class="c-article-authors-search__title u-h3 js-search-name">Ivan Jager</span><div class="c-article-authors-search__list"><div class="c-article-authors-search__item c-article-authors-search__list-item--left"><a href="/search?dc.creator=Ivan%20Jager" class="c-article-button" data-track="click" data-track-action="author link - publication" data-track-label="link" rel="nofollow">View author publications</a></div><div class="c-article-authors-search__item c-article-authors-search__list-item--right"><p class="search-in-title-js c-article-authors-search__text">You can also search for this author in
+                        <span class="c-article-identifiers"><a class="c-article-identifiers__item" href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&amp;term=Ivan%20Jager" data-track="click" data-track-action="author link - pubmed" data-track-label="link" rel="nofollow">PubMed</a><span class="u-hide"> </span><a class="c-article-identifiers__item" href="http://scholar.google.co.uk/scholar?as_q=&amp;num=10&amp;btnG=Search+Scholar&amp;as_epq=&amp;as_oq=&amp;as_eq=&amp;as_occt=any&amp;as_sauthors=%22Ivan%20Jager%22&amp;as_publication=&amp;as_ylo=&amp;as_yhi=&amp;as_allsubj=all&amp;hl=en" data-track="click" data-track-action="author link - scholar" data-track-label="link" rel="nofollow">Google Scholar</a></span></p></div></div></li><li id="auth-Min_Gyung-Kang"><span class="c-article-authors-search__title u-h3 js-search-name">Min Gyung Kang</span><div class="c-article-authors-search__list"><div class="c-article-authors-search__item c-article-authors-search__list-item--left"><a href="/search?dc.creator=Min%20Gyung%20Kang" class="c-article-button" data-track="click" data-track-action="author link - publication" data-track-label="link" rel="nofollow">View author publications</a></div><div class="c-article-authors-search__item c-article-authors-search__list-item--right"><p class="search-in-title-js c-article-authors-search__text">You can also search for this author in
+                        <span class="c-article-identifiers"><a class="c-article-identifiers__item" href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&amp;term=Min%20Gyung%20Kang" data-track="click" data-track-action="author link - pubmed" data-track-label="link" rel="nofollow">PubMed</a><span class="u-hide"> </span><a class="c-article-identifiers__item" href="http://scholar.google.co.uk/scholar?as_q=&amp;num=10&amp;btnG=Search+Scholar&amp;as_epq=&amp;as_oq=&amp;as_eq=&amp;as_occt=any&amp;as_sauthors=%22Min%20Gyung%20Kang%22&amp;as_publication=&amp;as_ylo=&amp;as_yhi=&amp;as_allsubj=all&amp;hl=en" data-track="click" data-track-action="author link - scholar" data-track-label="link" rel="nofollow">Google Scholar</a></span></p></div></div></li><li id="auth-Zhenkai-Liang"><span class="c-article-authors-search__title u-h3 js-search-name">Zhenkai Liang</span><div class="c-article-authors-search__list"><div class="c-article-authors-search__item c-article-authors-search__list-item--left"><a href="/search?dc.creator=Zhenkai%20Liang" class="c-article-button" data-track="click" data-track-action="author link - publication" data-track-label="link" rel="nofollow">View author publications</a></div><div class="c-article-authors-search__item c-article-authors-search__list-item--right"><p class="search-in-title-js c-article-authors-search__text">You can also search for this author in
+                        <span class="c-article-identifiers"><a class="c-article-identifiers__item" href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&amp;term=Zhenkai%20Liang" data-track="click" data-track-action="author link - pubmed" data-track-label="link" rel="nofollow">PubMed</a><span class="u-hide"> </span><a class="c-article-identifiers__item" href="http://scholar.google.co.uk/scholar?as_q=&amp;num=10&amp;btnG=Search+Scholar&amp;as_epq=&amp;as_oq=&amp;as_eq=&amp;as_occt=any&amp;as_sauthors=%22Zhenkai%20Liang%22&amp;as_publication=&amp;as_ylo=&amp;as_yhi=&amp;as_allsubj=all&amp;hl=en" data-track="click" data-track-action="author link - scholar" data-track-label="link" rel="nofollow">Google Scholar</a></span></p></div></div></li><li id="auth-James-Newsome"><span class="c-article-authors-search__title u-h3 js-search-name">James Newsome</span><div class="c-article-authors-search__list"><div class="c-article-authors-search__item c-article-authors-search__list-item--left"><a href="/search?dc.creator=James%20Newsome" class="c-article-button" data-track="click" data-track-action="author link - publication" data-track-label="link" rel="nofollow">View author publications</a></div><div class="c-article-authors-search__item c-article-authors-search__list-item--right"><p class="search-in-title-js c-article-authors-search__text">You can also search for this author in
+                        <span class="c-article-identifiers"><a class="c-article-identifiers__item" href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&amp;term=James%20Newsome" data-track="click" data-track-action="author link - pubmed" data-track-label="link" rel="nofollow">PubMed</a><span class="u-hide"> </span><a class="c-article-identifiers__item" href="http://scholar.google.co.uk/scholar?as_q=&amp;num=10&amp;btnG=Search+Scholar&amp;as_epq=&amp;as_oq=&amp;as_eq=&amp;as_occt=any&amp;as_sauthors=%22James%20Newsome%22&amp;as_publication=&amp;as_ylo=&amp;as_yhi=&amp;as_allsubj=all&amp;hl=en" data-track="click" data-track-action="author link - scholar" data-track-label="link" rel="nofollow">Google Scholar</a></span></p></div></div></li><li id="auth-Pongsin-Poosankam"><span class="c-article-authors-search__title u-h3 js-search-name">Pongsin Poosankam</span><div class="c-article-authors-search__list"><div class="c-article-authors-search__item c-article-authors-search__list-item--left"><a href="/search?dc.creator=Pongsin%20Poosankam" class="c-article-button" data-track="click" data-track-action="author link - publication" data-track-label="link" rel="nofollow">View author publications</a></div><div class="c-article-authors-search__item c-article-authors-search__list-item--right"><p class="search-in-title-js c-article-authors-search__text">You can also search for this author in
+                        <span class="c-article-identifiers"><a class="c-article-identifiers__item" href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&amp;term=Pongsin%20Poosankam" data-track="click" data-track-action="author link - pubmed" data-track-label="link" rel="nofollow">PubMed</a><span class="u-hide"> </span><a class="c-article-identifiers__item" href="http://scholar.google.co.uk/scholar?as_q=&amp;num=10&amp;btnG=Search+Scholar&amp;as_epq=&amp;as_oq=&amp;as_eq=&amp;as_occt=any&amp;as_sauthors=%22Pongsin%20Poosankam%22&amp;as_publication=&amp;as_ylo=&amp;as_yhi=&amp;as_allsubj=all&amp;hl=en" data-track="click" data-track-action="author link - scholar" data-track-label="link" rel="nofollow">Google Scholar</a></span></p></div></div></li><li id="auth-Prateek-Saxena"><span class="c-article-authors-search__title u-h3 js-search-name">Prateek Saxena</span><div class="c-article-authors-search__list"><div class="c-article-authors-search__item c-article-authors-search__list-item--left"><a href="/search?dc.creator=Prateek%20Saxena" class="c-article-button" data-track="click" data-track-action="author link - publication" data-track-label="link" rel="nofollow">View author publications</a></div><div class="c-article-authors-search__item c-article-authors-search__list-item--right"><p class="search-in-title-js c-article-authors-search__text">You can also search for this author in
+                        <span class="c-article-identifiers"><a class="c-article-identifiers__item" href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=search&amp;term=Prateek%20Saxena" data-track="click" data-track-action="author link - pubmed" data-track-label="link" rel="nofollow">PubMed</a><span class="u-hide"> </span><a class="c-article-identifiers__item" href="http://scholar.google.co.uk/scholar?as_q=&amp;num=10&amp;btnG=Search+Scholar&amp;as_epq=&amp;as_oq=&amp;as_eq=&amp;as_occt=any&amp;as_sauthors=%22Prateek%20Saxena%22&amp;as_publication=&amp;as_ylo=&amp;as_yhi=&amp;as_allsubj=all&amp;hl=en" data-track="click" data-track-action="author link - scholar" data-track-label="link" rel="nofollow">Google Scholar</a></span></p></div></div></li></ol></div></div></div></section><section aria-labelledby="editor-information" data-title="Editor information"><div class="c-article-section" id="editor-information-section"><h2 id="editor-information" class="c-article-section__title js-section-title js-c-reading-companion-sections-item">Editor information</h2><div class="c-article-section__content" id="editor-information-content"><h3 class="c-article__sub-heading" id="editor-affiliations">Editors and Affiliations</h3><ol class="c-article-author-affiliation__list"><li id="Aff1"><p class="c-article-author-affiliation__address">Department of Computer Science, Stony Brook University, NY 11794-4400, Stony Brook, USA</p><p class="c-article-author-affiliation__authors-list">R. Sekar</p></li><li id="Aff2"><p class="c-article-author-affiliation__address">Department of Computer and Information Sciences, University of Hyderabad, 500 046, Hyderabad, India</p><p class="c-article-author-affiliation__authors-list">Arun K. Pujari</p></li></ol></div></div></section><section data-title="Rights and permissions" lang="en"><div class="c-article-section" id="rightslink-section"><h2 id="rightslink" class="c-article-section__title js-section-title js-c-reading-companion-sections-item">Rights and permissions</h2><div class="c-article-section__content" id="rightslink-content"><p class="c-article-rights" data-test="rightslink-content"><a data-track="click" data-track-action="view rights and permissions" data-track-label="link" href="https://s100.copyright.com/AppDispatchServlet?publisherName=SpringerNature&amp;orderBeanReset=true&amp;orderSource=SpringerLink&amp;title=BitBlaze%3A%20A%20New%20Approach%20to%20Computer%20Security%20via%20Binary%20Analysis&amp;author=Dawn%20Song%2C%20David%20Brumley%2C%20Heng%20Yin%20et%20al&amp;contentID=10.1007%2F978-3-540-89862-7_1&amp;copyright=Springer-Verlag%20Berlin%20Heidelberg&amp;publication=eBook&amp;publicationDate=2008&amp;startPage=1&amp;endPage=25&amp;imprint=Springer-Verlag%20Berlin%20Heidelberg">Reprints and Permissions</a></p></div></div></section><section data-title="Copyright information"><div class="c-article-section" id="copyright-information-section"><h2 id="copyright-information" class="c-article-section__title js-section-title js-c-reading-companion-sections-item">Copyright information</h2><div class="c-article-section__content" id="copyright-information-content"><p>© 2008 Springer-Verlag Berlin Heidelberg</p></div></div></section><section aria-labelledby="chapter-info" data-title="About this paper" lang="en"><div class="c-article-section" id="chapter-info-section"><h2 id="chapter-info" class="c-article-section__title js-section-title js-c-reading-companion-sections-item">About this paper</h2><div class="c-article-section__content" id="chapter-info-content"><div class="c-bibliographic-information"><div class="c-bibliographic-information__column"><h3 class="c-article__sub-heading" id="citeas">Cite this paper</h3><p class="c-bibliographic-information__citation" data-test="bibliographic-information__cite_this_chapter">Song, D. <i>et al.</i> (2008).  BitBlaze: A New Approach to Computer Security via Binary Analysis.
+
+                     In: Sekar, R., Pujari, A.K. (eds) Information Systems Security. ICISS 2008. Lecture Notes in Computer Science, vol 5352. Springer, Berlin, Heidelberg. https://doi.org/10.1007/978-3-540-89862-7_1</p><h3 class="c-bibliographic-information__download-citation u-mb-8 u-mt-16 u-hide-print">Download citation</h3><ul class="c-bibliographic-information__download-citation-list"><li class="c-bibliographic-information__download-citation-item"><a data-test="citation-link" data-track="click" data-track-action="download chapter citation" data-track-label="link" data-track-external="" title="Download this article's citation as a .RIS file" href="https://citation-needed.springer.com/v2/references/10.1007/978-3-540-89862-7_1?format=refman&amp;flavour=citation">.RIS<svg width="16" height="16" focusable="false" role="img" aria-hidden="true" class="u-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#global-icon-download"></use></svg></a></li><li class="c-bibliographic-information__download-citation-item"><a data-test="citation-link" data-track="click" data-track-action="download chapter citation" data-track-label="link" data-track-external="" title="Download this article's citation as a .ENW file" href="https://citation-needed.springer.com/v2/references/10.1007/978-3-540-89862-7_1?format=endnote&amp;flavour=citation">.ENW<svg width="16" height="16" focusable="false" role="img" aria-hidden="true" class="u-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#global-icon-download"></use></svg></a></li><li class="c-bibliographic-information__download-citation-item"><a data-test="citation-link" data-track="click" data-track-action="download chapter citation" data-track-label="link" data-track-external="" title="Download this article's citation as a .BIB file" href="https://citation-needed.springer.com/v2/references/10.1007/978-3-540-89862-7_1?format=bibtex&amp;flavour=citation">.BIB<svg width="16" height="16" focusable="false" role="img" aria-hidden="true" class="u-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#global-icon-download"></use></svg></a></li></ul><ul class="c-bibliographic-information__list u-mb-24" data-test="publication-history"><li class="c-bibliographic-information__list-item c-bibliographic-information__list-item--doi"><p data-test="bibliographic-information__doi"><abbr title="Digital Object Identifier">DOI</abbr><span class="u-hide">: </span><span class="c-bibliographic-information__value">https://doi.org/10.1007/978-3-540-89862-7_1</span></p></li><li class="c-bibliographic-information__list-item"><p data-test="bibliographic-information__publisher-name">
+                            Publisher Name<span class="u-hide">: </span><span class="c-bibliographic-information__value">Springer, Berlin, Heidelberg</span></p></li><li class="c-bibliographic-information__list-item"><p data-test="bibliographic-information__pisbn">
+                                Print ISBN<span class="u-hide">: </span><span class="c-bibliographic-information__value">978-3-540-89861-0</span></p></li><li class="c-bibliographic-information__list-item"><p data-test="bibliographic-information__eisbn">
+                                Online ISBN<span class="u-hide">: </span><span class="c-bibliographic-information__value">978-3-540-89862-7</span></p></li><li class="c-bibliographic-information__list-item"><p data-test="bibliographic-information__package">eBook Packages<span class="u-hide">: </span><span class="c-bibliographic-information__multi-value"><a href="/search?facet-content-type=%22Book%22&amp;package=11645&amp;facet-start-year=2008&amp;facet-end-year=2008">Computer Science</a></span><span class="c-bibliographic-information__multi-value"><a href="/search?facet-content-type=%22Book%22&amp;package=43710&amp;facet-start-year=2008&amp;facet-end-year=2008">Computer Science (R0)</a></span></p></li></ul><div data-component="share-box"><div class="c-article-share-box u-display-none" hidden=""><h3 class="c-article__sub-heading">Share this paper</h3><p class="c-article-share-box__description">Anyone you share the following link with will be able to read this content:</p><button class="js-get-share-url c-article-share-box__button" id="get-share-url" data-track="click" data-track-label="button" data-track-external="" data-track-action="get shareable link">Get shareable link</button><div class="js-no-share-url-container u-display-none" hidden=""><p class="js-c-article-share-box__no-sharelink-info c-article-share-box__no-sharelink-info">Sorry, a shareable link is not currently available for this article.</p></div><div class="js-share-url-container u-display-none" hidden=""><p class="js-share-url c-article-share-box__only-read-input" id="share-url" data-track="click" data-track-label="button" data-track-action="select share url"></p><button class="js-copy-share-url c-article-share-box__button--link-like" id="copy-share-url" data-track="click" data-track-label="button" data-track-action="copy share url" data-track-external="">Copy to clipboard</button></div><p class="js-c-article-share-box__additional-info c-article-share-box__additional-info">
+                                Provided by the Springer Nature SharedIt content-sharing initiative
+                            </p></div></div><div data-component="chapter-info-list"></div></div></div></div></div></section>
+                
+                
+            </div>
+        </article>
+    </main>
+
+    <div class="c-article-extras u-text-sm u-hide-print" id="sidebar" data-container-type="reading-companion" data-track-component="conference paper">
+        <aside>
+            
+                
+                    <div class="u-mb-16 u-clear-both">
+                        <a href="//wayf.springernature.com?redirect_uri&#x3D;https%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%2F978-3-540-89862-7_1" class="u-button u-button--full-width u-button--primary u-justify-content-space-between c-pdf-download__link" data-track="click" data-track-action="institution access" data-track-label="button">
+                            <span>Access via your institution</span>
+                            <svg aria-hidden="true" focusable="false" width="16" height="16" class="u-icon"><use xlink:href="#icon-springer-arrow-right"></use></svg>
+                        </a>
+                    </div>
+                
+            
+            <div data-test="download-article-link-wrapper" class="js-context-bar-sticky-point-desktop">
+                
+            </div>
+
+            <div data-test="editorial-summary">
+                
+            </div>
+
+            <div class="c-reading-companion">
+                <div class="c-reading-companion__sticky" data-component="reading-companion-sticky" data-test="reading-companion-sticky">
+
+                    
+                        
+                            <div data-test="buy-box-desktop" class="u-mb-24">
+                                <div class="sprcom-buybox buybox" id="sprcom-buybox">
+ <div>
+  <div class="c-box" style="padding: 0">
+   <h2 class="c-box__heading visually-hidden">Buying options</h2>
+   <div class="buying-options">
+    <div class="buying-option expanded">
+     <dl class="buying-option-price">
+      <dt>
+       <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M11.782 11L9.3 8.518c-.393-.392-.4-1.022-.02-1.403a1.001 1.001 0 011.417 0l4.176 4.177a1.001 1.001 0 010 1.416l-4.176 4.177a.991.991 0 01-1.4.016 1 1 0 01.003-1.42L11.782 13l1.013-.998L11.782 11z" fill="#666" fill-rule="evenodd"></path>
+       </svg> Chapter
+      </dt>
+      <dd class="price-amount">
+       <div data-test-id="test-chapter-price" class="buybox__price">
+        EUR &nbsp; 24.95
+       </div>
+      </dd>
+      <dd class="price-info">
+       Price excludes VAT (Hong Kong/P.R.China)
+      </dd>
+     </dl>
+     <form class="buying-option-form" action="https://order.springer.com/public/cart" method="post"><input type="hidden" name="type" value="chapter"> <input type="hidden" name="doi" value="10.1007/978-3-540-89862-7_1"> <input type="hidden" name="isxn" value="978-3-540-89862-7"> <input type="hidden" name="contenttitle" value="BitBlaze: A New Approach to Computer Security via Binary Analysis"> <input type="hidden" name="copyrightyear" value="2008"> <input type="hidden" name="year" value=""> <input type="hidden" name="authors" value="Dawn Song, et al."> <input type="hidden" name="title" value="Information Systems Security"> <input type="hidden" name="mac" value="cdbb09a1b66d7c6fcc7f41807f04274f">
+      <ul class="buying-option-usps">
+       <li>DOI: 10.1007/978-3-540-89862-7_1</li>
+       <li>Chapter length: 25 pages</li>
+       <li>Instant PDF download</li>
+       <li>Readable on all devices</li>
+       <li>Own it forever</li>
+       <li>Exclusive offer for individuals only</li>
+       <li>Tax calculation will be finalised during checkout</li>
+      </ul> <button type="submit" class="buybox__buy-button c-button c-button--blue" value="Submit" data-track="click" data-track-action="buy pdf" data-track-label="buy chapter action" onclick="dataLayer.push({&quot;event&quot;:&quot;addToCart&quot;,&quot;ecommerce&quot;:{&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;add&quot;:{&quot;products&quot;:[{&quot;name&quot;:&quot;BitBlaze: A New Approach to Computer Security via Binary Analysis&quot;,&quot;id&quot;:&quot;10.1007/978-3-540-89862-7_1&quot;,&quot;price&quot;:24.95,&quot;brand&quot;:&quot;Springer Berlin Heidelberg&quot;,&quot;category&quot;:&quot;Systems and Data Security&quot;,&quot;variant&quot;:&quot;ppv-chapter&quot;,&quot;quantity&quot;:1}]}}});">Buy Chapter</button>
+     </form>
+    </div>
+    <div class="buying-option expanded">
+     <dl class="buying-option-price">
+      <dt>
+       <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M11.782 11L9.3 8.518c-.393-.392-.4-1.022-.02-1.403a1.001 1.001 0 011.417 0l4.176 4.177a1.001 1.001 0 010 1.416l-4.176 4.177a.991.991 0 01-1.4.016 1 1 0 01.003-1.42L11.782 13l1.013-.998L11.782 11z" fill="#666" fill-rule="evenodd"></path>
+       </svg> eBook
+      </dt>
+      <dd class="price-amount">
+       EUR &nbsp; 58.84
+      </dd>
+      <dd class="price-info">
+       Price includes VAT (Hong Kong/P.R.China)
+      </dd>
+     </dl>
+     <form class="buying-option-form" action="https://order.springer.com/public/cart" method="post"><input type="hidden" name="type" value="ebook"> <input type="hidden" name="doi" value="10.1007/978-3-540-89862-7"> <input type="hidden" name="isxn" value="978-3-540-89862-7"> <input type="hidden" name="contenttitle" value="Information Systems Security">
+      <ul class="buying-option-usps">
+       <li>ISBN: 978-3-540-89862-7</li>
+       <li>Instant PDF download</li>
+       <li>Readable on all devices</li>
+       <li>Own it forever</li>
+       <li>Exclusive offer for individuals only</li>
+       <li>Tax calculation will be finalised during checkout</li>
+      </ul> <button type="submit" class="buybox__buy-button c-button c-button--blue" value="Submit" data-track="click" data-track-label="buy ebook" onclick="dataLayer.push({&quot;event&quot;:&quot;addToCart&quot;,&quot;ecommerce&quot;:{&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;add&quot;:{&quot;products&quot;:[{&quot;name&quot;:&quot;Information Systems Security&quot;,&quot;id&quot;:&quot;978-3-540-89862-7&quot;,&quot;price&quot;:54.99,&quot;brand&quot;:&quot;Springer Berlin Heidelberg&quot;,&quot;category&quot;:&quot;Systems and Data Security&quot;,&quot;variant&quot;:&quot;ebo&quot;,&quot;quantity&quot;:1}]}}});">Buy eBook</button>
+     </form>
+    </div>
+    <div class="buying-option expanded">
+     <dl class="buying-option-price">
+      <dt>
+       <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M11.782 11L9.3 8.518c-.393-.392-.4-1.022-.02-1.403a1.001 1.001 0 011.417 0l4.176 4.177a1.001 1.001 0 010 1.416l-4.176 4.177a.991.991 0 01-1.4.016 1 1 0 01.003-1.42L11.782 13l1.013-.998L11.782 11z" fill="#666" fill-rule="evenodd"></path>
+       </svg> Softcover Book
+      </dt>
+      <dd class="price-amount">
+       EUR &nbsp; 69.99
+      </dd>
+      <dd class="price-info">
+       Price excludes VAT (Hong Kong/P.R.China)
+      </dd>
+     </dl>
+     <form class="buying-option-form" action="https://order.springer.com/public/cart" method="post"><input type="hidden" name="type" value="book"> <input type="hidden" name="doi" value="10.1007/978-3-540-89862-7"> <input type="hidden" name="isxn" value="978-3-540-89861-0"> <input type="hidden" name="contenttitle" value="Information Systems Security">
+      <ul class="buying-option-usps">
+       <li>ISBN: 978-3-540-89861-0</li>
+       <li>Dispatched in 3 to 5 business days</li>
+       <li>Exclusive offer for individuals only</li>
+       <li>Free shipping worldwide<br><a href="https://support.springernature.com/en/support/solutions/articles/6000233448-coronavirus-disease-covid-19-delivery-information" target="_blank">Shipping restrictions may apply, check to see if you are impacted</a>.</li>
+       <li>Tax calculation will be finalised during checkout</li>
+      </ul> <button type="submit" class="buybox__buy-button c-button c-button--blue" value="Submit" data-track="click" data-track-label="buy softcover" onclick="dataLayer.push({&quot;event&quot;:&quot;addToCart&quot;,&quot;ecommerce&quot;:{&quot;currencyCode&quot;:&quot;EUR&quot;,&quot;add&quot;:{&quot;products&quot;:[{&quot;name&quot;:&quot;Information Systems Security&quot;,&quot;id&quot;:&quot;978-3-540-89861-0&quot;,&quot;price&quot;:69.99,&quot;brand&quot;:&quot;Springer Berlin Heidelberg&quot;,&quot;category&quot;:&quot;Systems and Data Security&quot;,&quot;variant&quot;:&quot;print&quot;,&quot;quantity&quot;:1}]}}});">Buy Softcover Book</button>
+     </form>
+    </div>
+   </div>
+  </div>
+  <div class="c-box buybox-additional-info"><a class="c-box__item" href="https://www.springernature.com/gp/librarians/licensing/license-options">Learn about institutional subscriptions</a>
+  </div>
+ </div>
+ <style>
+                .sprcom-buybox {
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+                .sprcom-buybox > div {
+                    flex-grow: 1;
+                    width: 100%;
+                }
+
+                .sprcom-buybox * {
+                    font-size: 13px !important;
+                }
+
+                .sprcom-buybox > div > * + * {
+                    margin-top: 24px;
+                }
+
+                .sprcom-buybox .c-box__heading {
+                    margin-bottom: 0;
+                }
+
+
+                .sprcom-buybox .buying-options {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                .sprcom-buybox .buying-options > * {
+                    background-color: #ddd;
+                    box-shadow: 0 0 0 1px #bbb;
+                    flex-grow: 1;
+                    flex-basis: auto;
+                    width: 240px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+
+                .sprcom-buybox dt {
+                    align-items: center;
+                    display: flex;
+                    font-weight: 400;
+                    margin-left: -10px;
+                }
+
+                .sprcom-buybox .buying-option-form {
+                    padding: 12px;
+                }
+
+                .sprcom-buybox .buying-option-price {
+                    align-items: center;
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-size: 1.6rem;
+                    line-height: 1.4;
+                    user-select: none;
+                    padding: 6px 12px;
+                }
+
+                .sprcom-buybox .buying-option-price dt,
+                .sprcom-buybox .buying-option-price dt svg path,
+                .sprcom-buybox .buying-option-price dd {
+                    color: #004aa7;
+                    fill: #004aa7;
+                }
+
+                .sprcom-buybox .buying-option-price dt,
+                .sprcom-buybox .buying-option-price dd {
+                    flex-grow: 1;
+                }
+
+                .sprcom-buybox .buying-option-price .price-info {
+                    color: #666;
+                    font-size: 80%;
+                    text-align: right;
+                    width: 100%;
+                }
+
+                .sprcom-buybox .buying-option-price .price-amount {
+                    font-size: 140%;
+                    text-align: right;
+                    font-weight: 600;
+                }
+
+                .sprcom-buybox .buying-option-price .price-amount-without-discount {
+                    color: #c40606;
+                    font-size: 140%;
+                    text-decoration: line-through;
+                    width: 100%;
+                }
+
+                .sprcom-buybox .buying-option-price .price-type {
+                    font-size: 40%;
+                    margin-left: 8px;
+                }
+
+                .sprcom-buybox .buying-option-usps {
+                    color: #666;
+                    font-size: 1.4rem;
+                    line-height: 1.4;
+                    margin: 0 0 0 13px;
+                    padding-left: 16px;
+
+                    list-style: disc;
+                }
+
+                .sprcom-buybox .buying-option-usps > li {
+                    position: relative;
+                }
+
+                .sprcom-buybox .buying-option-usps > li:not(:first-child) {
+                    margin-top: 4px;
+                }
+
+                .sprcom-buybox .c-button {
+                    margin-top: 18px;
+                    text-align: center;
+                }
+
+                .sprcom-buybox .buying-options > .expanded {
+                    background-color: #fff;
+                }
+
+                .sprcom-buybox .buying-options > .expanded dt,
+                .sprcom-buybox .buying-options > .expanded dt svg path,
+                .sprcom-buybox .buying-options > .expanded .price-amount {
+                    color: #333;
+                    fill: #666;
+                }
+
+
+                .sprcom-buybox .buybox-additional-info {
+                    padding-top: 6px;
+                    padding-bottom: 8px;
+                }
+
+                .sprcom-buybox .buybox-additional-info .c-box__item {
+                    font-size: 13px !important;
+                    margin-bottom: 0;
+                }
+
+                .sprcom-buybox a:visited {
+                    color: #004b83;
+                }
+
+
+                .sprcom-buybox [role=button] {
+                    cursor: pointer;
+                }
+
+                .sprcom-buybox button:focus,
+                .sprcom-buybox [role=button]:focus {
+                    outline: 4px solid #fc0;
+                    position: relative;
+                }
+
+                .sprcom-buybox [aria-expanded=false] svg {
+                    transform: rotate(0deg);
+                }
+
+                .sprcom-buybox [aria-expanded=true] svg {
+                    transform: rotate(90deg);
+                }
+
+                .sprcom-buybox dt {
+                    align-items: center;
+                    display: flex;
+                }
+
+
+                .sprcom-buybox .visually-hidden {
+                    clip: rect(1px, 1px, 1px, 1px);
+                    height: 1px;
+                    overflow: hidden;
+                    position: absolute;
+                    width: 1px;
+                }
+
+                .sprcom-buybox style {
+                    display: none;
+                }
+            </style>
+ <script>
+                ;(function () {
+                    var timestamp = Date.now()
+                    document.write('<div data-id="id_'+ timestamp +'"></div>')
+
+                    var head = document.getElementsByTagName("head")[0]
+                    var script = document.createElement("script")
+                    script.type = "text/javascript"
+                    script.src = "https://buy.springer.com/assets/js/buybox-bundle-abe5f44a67.js"
+                    script.id = "ecommerce-scripts-" + timestamp
+                    head.appendChild(script)
+
+                    var buybox = document.querySelector("[data-id=id_"+ timestamp +"]").parentNode
+
+                    ;[].slice.call(buybox.querySelectorAll(".buying-option")).forEach(initCollapsibles)
+
+                    function initCollapsibles(subscription, index) {
+                        var toggle = subscription.querySelector(".buying-option-price")
+                        subscription.classList.remove("expanded")
+                        var form = subscription.querySelector(".buying-option-form")
+
+                        if (form) {
+                            var formAction = form.getAttribute("action")
+                            document.querySelector("#ecommerce-scripts-" + timestamp).addEventListener("load", bindModal(form, formAction, timestamp, index), false)
+                        }
+
+                        var priceInfo = subscription.querySelector(".price-info")
+                        var buyingOption = toggle.parentElement
+
+                        if (toggle && form && priceInfo) {
+                            toggle.setAttribute("role", "button")
+                            toggle.setAttribute("tabindex", "0")
+
+                            toggle.addEventListener("click", function (event) {
+                                var expanded = toggle.getAttribute("aria-expanded") === "true" || false
+                                toggle.setAttribute("aria-expanded", !expanded)
+                                form.hidden = expanded
+                                if (!expanded) {
+                                    buyingOption.classList.add("expanded")
+                                } else {
+                                    buyingOption.classList.remove("expanded")
+                                }
+                                priceInfo.hidden = expanded
+                            }, false)
+                        }
+                    }
+
+                    function bindModal(form, formAction, timestamp, index) {
+                        var weHasBrowserSupport = window.fetch && Array.from
+
+                        return function() {
+                            var Buybox = EcommScripts ? EcommScripts.Buybox : null
+                            var Modal = EcommScripts ? EcommScripts.Modal : null
+
+                            if (weHasBrowserSupport && Buybox && Modal) {
+                                var modalID = "ecomm-modal_" + timestamp + "_" + index
+
+                                var modal = new Modal(modalID)
+                                modal.domEl.addEventListener("close", close)
+                                function close() {
+                                    form.querySelector("button[type=submit]").focus()
+                                }
+
+                                var cartURL = "/cart"
+                                var cartModalURL = "/cart?messageOnly=1"
+
+                                form.setAttribute(
+                                    "action",
+                                    formAction.replace(cartURL, cartModalURL)
+                                )
+
+                                var formSubmit = Buybox.interceptFormSubmit(
+                                    Buybox.fetchFormAction(window.fetch),
+                                    Buybox.triggerModalAfterAddToCartSuccess(modal),
+                                    function() {
+                                        form.removeEventListener("submit", formSubmit, false)
+                                        form.setAttribute(
+                                            "action",
+                                            formAction.replace(cartModalURL, cartURL)
+                                        )
+                                        form.submit()
+                                    }
+                                )
+                                
+                                form.addEventListener("submit", formSubmit, false)
+
+                                document.body.appendChild(modal.domEl)
+                            }
+                        }
+                    }
+
+                    function initKeyControls() {
+                        document.addEventListener("keydown", function (event) {
+                            if (document.activeElement.classList.contains("buying-option-price") && (event.code === "Space" || event.code === "Enter")) {
+                                if (document.activeElement) {
+                                    event.preventDefault()
+                                    document.activeElement.click()
+                                }
+                            }
+                        }, false)
+                    }
+
+                    function initialStateOpen() {
+                        var buyboxWidth = buybox.offsetWidth
+                        ;[].slice.call(buybox.querySelectorAll(".buying-option")).forEach(function (option, index) {
+                            var toggle = option.querySelector(".buying-option-price")
+                            var form = option.querySelector(".buying-option-form")
+                            var priceInfo = option.querySelector(".price-info")
+                            if (buyboxWidth > 480) {
+                                toggle.click()
+                            } else {
+                                if (index === 0) {
+                                    toggle.click()
+                                } else {
+                                    toggle.setAttribute("aria-expanded", "false")
+                                    form.hidden = "hidden"
+                                    priceInfo.hidden = "hidden"
+                                }
+                            }
+                        })
+                    }
+
+                    initialStateOpen()
+
+                    if (window.buyboxInitialised) return
+                    window.buyboxInitialised = true
+
+                    initKeyControls()
+                })()
+            </script>
+</div>
+                            </div>
+                        
+                    
+
+                    <div class="c-reading-companion__panel c-reading-companion__sections c-reading-companion__panel--active" id="tabpanel-sections"></div>
+                    <div class="c-reading-companion__panel c-reading-companion__figures c-reading-companion__panel--full-width" id="tabpanel-figures"></div>
+                    <div class="c-reading-companion__panel c-reading-companion__references c-reading-companion__panel--full-width" id="tabpanel-references"></div>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>
+
+
+
+        
+    <footer class="app-footer" role="contentinfo" data-test="springerlink-footer">
+        <div class="app-footer__aside-wrapper u-hide-print">
+            <div class="app-footer__container">
+                <p class="app-footer__strapline">Over 10 million scientific documents at your fingertips</p>
+                
+                    <div class="app-footer__edition" data-component="SV.EditionSwitcher">
+                        <span class="u-visually-hidden" data-role="button-dropdown__title" data-btn-text="Switch between Academic & Corporate Edition">Switch Edition</span>
+                        <ul class="app-footer-edition-list" data-role="button-dropdown__content" data-test="footer-edition-switcher-list">
+                            <li class="selected">
+                                <a data-test="footer-academic-link"
+                                   href="/siteEdition/link"
+                                   id="siteedition-academic-link">Academic Edition</a>
+                            </li>
+                            <li>
+                                <a data-test="footer-corporate-link"
+                                   href="/siteEdition/rd"
+                                   id="siteedition-corporate-link">Corporate Edition</a>
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+        </div>
+        <div class="app-footer__container">
+            <ul class="app-footer__nav u-hide-print">
+                <li><a href="/">Home</a></li>
+                <li><a href="/impressum">Impressum</a></li>
+                <li><a href="/termsandconditions">Legal information</a></li>
+                <li><a href="/privacystatement">Privacy statement</a></li>
+                <li><a href="https://www.springernature.com/ccpa">California Privacy Statement</a></li>
+                <li><a href="/cookiepolicy">How we use cookies</a></li>
+                
+                <li><a class="optanon-toggle-display" data-cc-action="preferences" href="javascript:void(0);">Manage cookies/Do not sell my data</a></li>
+                
+                <li><a href="/accessibility">Accessibility</a></li>
+                <li><a href="https://support.springer.com/en/support/home">FAQ</a></li>
+                <li><a id="contactus-footer-link" href="https://support.springer.com/en/support/solutions/articles/6000206179-contacting-us">Contact us</a></li>
+                <li><a href="https://www.springer.com/gp/shop/promo/affiliate/springer-nature">Affiliate program</a></li>
+            </ul>
+            <div class="c-user-metadata">
+    
+        <p class="c-user-metadata__item">
+            <span data-test="footer-user-login-status">Not logged in</span>
+            <span data-test="footer-user-ip"> - 218.102.252.149</span>
+        </p>
+        <p class="c-user-metadata__item" data-test="footer-business-partners">
+            Not affiliated
+        </p>
+
+    
+</div>
+
+            <a class="app-footer__parent-logo" target="_blank" rel="noopener" href="//www.springernature.com"  title="Go to Springer Nature">
+                <span class="u-visually-hidden">Springer Nature</span>
+                <svg width="125" height="12" focusable="false" aria-hidden="true">
+                    <image width="125" height="12" alt="Springer Nature logo"
+                           src=/oscar-static/images/springerlink/png/springernature-60a72a849b.png
+                           xmlns:xlink="http://www.w3.org/1999/xlink"
+                           xlink:href=/oscar-static/images/springerlink/svg/springernature-b88bf25ad4.svg>
+                    </image>
+                </svg>
+            </a>
+            <p class="app-footer__copyright">&copy; 2022 Springer Nature Switzerland AG. Part of <a target="_blank" rel="noopener" href="//www.springernature.com">Springer Nature</a>.</p>
+            
+        </div>
+    </footer>
+
+
+
+    </div>
+
+    
+    <svg class="u-hide hide">
+        <symbol id="global-icon-chevron-right" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+            <path d="m5.96738168 4.70639573 2.39518594-2.41447274c.37913917-.38219212.98637524-.38972225 1.35419292-.01894278.37750606.38054586.37784436.99719163-.00013556 1.37821513l-4.03074001 4.06319683c-.37758093.38062133-.98937525.38100976-1.367372-.00003075l-4.03091981-4.06337806c-.37759778-.38063832-.38381821-.99150444-.01600053-1.3622839.37750607-.38054587.98772445-.38240057 1.37006824.00302197l2.39538588 2.4146743.96295325.98624457z" fill="currentColor" fill-rule="evenodd" transform="matrix(0 -1 1 0 0 10)"/>
+        </symbol>
+        <symbol id="global-icon-download" viewBox="0 0 16 16">
+            <path d="M2 14c0-.556.449-1 1.002-1h9.996a.999.999 0 110 2H3.002A1.006 1.006 0 012 14zM9 2v6.8l2.482-2.482c.392-.392 1.022-.4 1.403-.02a1.001 1.001 0 010 1.417l-4.177 4.177a1.001 1.001 0 01-1.416 0L3.115 7.715a.991.991 0 01-.016-1.4 1 1 0 011.42.003L7 8.8V2c0-.55.444-.996 1-.996.552 0 1 .445 1 .996z" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="global-icon-email" viewBox="0 0 18 18">
+            <path d="M1.995 2h14.01A2 2 0 0118 4.006v9.988A2 2 0 0116.005 16H1.995A2 2 0 010 13.994V4.006A2 2 0 011.995 2zM1 13.994A1 1 0 001.995 15h14.01A1 1 0 0017 13.994V4.006A1 1 0 0016.005 3H1.995A1 1 0 001 4.006zM9 11L2 7V5.557l7 4 7-4V7z" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="global-icon-institution" viewBox="0 0 18 18">
+            <path d="M14 8a1 1 0 011 1v6h1.5a.5.5 0 01.5.5v.5h.5a.5.5 0 01.5.5V18H0v-1.5a.5.5 0 01.5-.5H1v-.5a.5.5 0 01.5-.5H3V9a1 1 0 112 0v6h8V9a1 1 0 011-1zM6 8l2 1v4l-2 1zm6 0v6l-2-1V9zM9.573.401l7.036 4.925A.92.92 0 0116.081 7H1.92a.92.92 0 01-.528-1.674L8.427.401a1 1 0 011.146 0zM9 2.441L5.345 5h7.31z" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="global-icon-search" viewBox="0 0 22 22">
+            <path fill-rule="evenodd" d="M21.697 20.261a1.028 1.028 0 01.01 1.448 1.034 1.034 0 01-1.448-.01l-4.267-4.267A9.812 9.811 0 010 9.812a9.812 9.811 0 1117.43 6.182zM9.812 18.222A8.41 8.41 0 109.81 1.403a8.41 8.41 0 000 16.82z"/>
+        </symbol>
+        <symbol id="icon-info" viewBox="0 0 18 18">
+            <path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm0 7h-1.5l-.11662113.00672773c-.49733868.05776511-.88337887.48043643-.88337887.99327227 0 .47338693.32893365.86994729.77070917.97358929l.1126697.01968298.11662113.00672773h.5v3h-.5l-.11662113.0067277c-.42082504.0488782-.76196299.3590206-.85696816.7639815l-.01968298.1126697-.00672773.1166211.00672773.1166211c.04887817.4208251.35902055.761963.76398144.8569682l.1126697.019683.11662113.0067277h3l.1166211-.0067277c.4973387-.0577651.8833789-.4804365.8833789-.9932723 0-.4733869-.3289337-.8699473-.7707092-.9735893l-.1126697-.019683-.1166211-.0067277h-.5v-4l-.00672773-.11662113c-.04887817-.42082504-.35902055-.76196299-.76398144-.85696816l-.1126697-.01968298zm0-3.25c-.69035594 0-1.25.55964406-1.25 1.25s.55964406 1.25 1.25 1.25 1.25-.55964406 1.25-1.25-.55964406-1.25-1.25-1.25z" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="icon-success" viewBox="0 0 18 18">
+            <path d="M9 0a9 9 0 110 18A9 9 0 019 0zm3.486 4.982l-4.718 5.506L5.14 8.465a.991.991 0 00-1.423.133 1.06 1.06 0 00.13 1.463l3.407 2.733a1 1 0 001.387-.133l5.385-6.334a1.06 1.06 0 00-.116-1.464.991.991 0 00-1.424.119z" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="icon-chevron-down" viewBox="0 0 16 16">
+            <path d="m5.58578644 3-3.29289322-3.29289322c-.39052429-.39052429-.39052429-1.02368927 0-1.41421356s1.02368927-.39052429 1.41421356 0l4 4c.39052429.39052429.39052429 1.02368927 0 1.41421356l-4 4c-.39052429.39052429-1.02368927.39052429-1.41421356 0s-.39052429-1.02368927 0-1.41421356z" fill-rule="evenodd" transform="matrix(0 1 -1 0 11 1)"/>
+        </symbol>
+        <symbol id="icon-warning" viewBox="0 0 18 18">
+            <path d="m9 11.75c.69035594 0 1.25.5596441 1.25 1.25s-.55964406 1.25-1.25 1.25-1.25-.5596441-1.25-1.25.55964406-1.25 1.25-1.25zm.41320045-7.75c.55228475 0 1.00000005.44771525 1.00000005 1l-.0034543.08304548-.3333333 4c-.043191.51829212-.47645714.91695452-.99654578.91695452h-.15973424c-.52008864 0-.95335475-.3986624-.99654576-.91695452l-.33333333-4c-.04586475-.55037702.36312325-1.03372649.91350028-1.07959124l.04148683-.00259031zm-.41320045 14c-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9 4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9z" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="icon-plus" viewBox="0 0 16 16">
+            <path d="m2.00087166 7h4.99912834v-4.99912834c0-.55276616.44386482-1.00087166 1-1.00087166.55228475 0 1 .44463086 1 1.00087166v4.99912834h4.9991283c.5527662 0 1.0008717.44386482 1.0008717 1 0 .55228475-.4446309 1-1.0008717 1h-4.9991283v4.9991283c0 .5527662-.44386482 1.0008717-1 1.0008717-.55228475 0-1-.4446309-1-1.0008717v-4.9991283h-4.99912834c-.55276616 0-1.00087166-.44386482-1.00087166-1 0-.55228475.44463086-1 1.00087166-1z" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="icon-minus" viewBox="0 0 16 16">
+            <path d="m2.00087166 7h11.99825664c.5527662 0 1.0008717.44386482 1.0008717 1 0 .55228475-.4446309 1-1.0008717 1h-11.99825664c-.55276616 0-1.00087166-.44386482-1.00087166-1 0-.55228475.44463086-1 1.00087166-1z" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="icon-error" viewBox="0 0 18 18">
+            <path d="m9 0c4.9705627 0 9 4.02943725 9 9 0 4.9705627-4.0294373 9-9 9-4.97056275 0-9-4.0294373-9-9 0-4.97056275 4.02943725-9 9-9zm2.8630343 4.71100931-2.8630343 2.86303426-2.86303426-2.86303426c-.39658757-.39658757-1.03281091-.39438847-1.4265779-.00062147-.39651227.39651226-.39348876 1.03246767.00062147 1.4265779l2.86303426 2.86303426-2.86303426 2.8630343c-.39658757.3965875-.39438847 1.0328109-.00062147 1.4265779.39651226.3965122 1.03246767.3934887 1.4265779-.0006215l2.86303426-2.8630343 2.8630343 2.8630343c.3965875.3965876 1.0328109.3943885 1.4265779.0006215.3965122-.3965123.3934887-1.0324677-.0006215-1.4265779l-2.8630343-2.8630343 2.8630343-2.86303426c.3965876-.39658757.3943885-1.03281091.0006215-1.4265779-.3965123-.39651227-1.0324677-.39348876-1.4265779.00062147z" fill="currentColor" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="icon-springer-arrow-left">
+            <path d="M15 7a1 1 0 000-2H3.385l2.482-2.482a.994.994 0 00.02-1.403 1.001 1.001 0 00-1.417 0L.294 5.292a1.001 1.001 0 000 1.416l4.176 4.177a.991.991 0 001.4.016 1 1 0 00-.003-1.42L3.385 7H15z"/>
+        </symbol>
+        <symbol id="icon-springer-arrow-right">
+            <path d="M1 7a1 1 0 010-2h11.615l-2.482-2.482a.994.994 0 01-.02-1.403 1.001 1.001 0 011.417 0l4.176 4.177a1.001 1.001 0 010 1.416l-4.176 4.177a.991.991 0 01-1.4.016 1 1 0 01.003-1.42L12.615 7H1z"/>
+        </symbol>
+        <symbol id="icon-arrow-up" viewBox="0 0 16 16">
+            <path d="m12.716625 4.46975946-4.03074003-4.17620792c-.37758093-.39120768-.98937525-.39160691-1.367372.0000316l-4.03091981 4.1763942c-.37759778.39122514-.38381821 1.01908149-.01600053 1.40017357.37750607.39113012.98772445.3930364 1.37006824-.00310603l2.39538588-2.48183446v11.61478958l.00649339.1166211c.055753.4973387.46370161.8833789.95867408.8833789.49497246 0 .90292107-.3860402.95867408-.8833789l.00649338-.1166211v-11.61478958l2.39518592 2.4816273c.3791392.39282216.9863753.40056173 1.3541929.01946965.3775061-.39113012.3778444-1.02492687-.0001355-1.41654791z" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="icon-tick" viewBox="0 0 24 24">
+            <path d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z M7.657,10.79 C7.45285634,10.6137568 7.18569967,10.5283283 6.91717333,10.5534259 C6.648647,10.5785236 6.40194824,10.7119794 6.234,10.923 C5.87705269,11.3666969 5.93445559,12.0131419 6.364,12.387 L10.261,15.754 C10.6765468,16.112859 11.3037113,16.0695601 11.666,15.657 L17.759,8.713 C18.120307,8.27302248 18.0695334,7.62621189 17.644,7.248 C17.4414817,7.06995024 17.1751516,6.9821166 16.9064461,7.00476032 C16.6377406,7.02740404 16.3898655,7.15856958 16.22,7.368 L10.768,13.489 L7.657,10.79 Z"/>
+        </symbol>
+        <symbol id="icon-expand-image" viewBox="0 0 18 18">
+            <path d="m7.49754099 11.9178212c.38955542-.3895554.38761957-1.0207846-.00290473-1.4113089-.39324695-.3932469-1.02238878-.3918247-1.41130883-.0029047l-4.10273549 4.1027355.00055454-3.5103985c.00008852-.5603185-.44832171-1.006032-1.00155062-1.0059446-.53903074.0000852-.97857527.4487442-.97866268 1.0021075l-.00093318 5.9072465c-.00008751.553948.44841131 1.001882 1.00174994 1.0017946l5.906983-.0009331c.5539233-.0000875 1.00197907-.4486389 1.00206646-1.0018679.00008515-.5390307-.45026621-.9784332-1.00588841-.9783454l-3.51010549.0005545zm3.00571741-5.83449376c-.3895554.38955541-.3876196 1.02078454.0029047 1.41130883.393247.39324696 1.0223888.39182478 1.4113089.00290473l4.1027355-4.10273549-.0005546 3.5103985c-.0000885.56031852.4483217 1.006032 1.0015506 1.00594461.5390308-.00008516.9785753-.44874418.9786627-1.00210749l.0009332-5.9072465c.0000875-.553948-.4484113-1.00188204-1.0017499-1.00179463l-5.906983.00093313c-.5539233.00008751-1.0019791.44863892-1.0020665 1.00186784-.0000852.53903074.4502662.97843325 1.0058884.97834547l3.5101055-.00055449z" fill="currentColor" fill-rule="evenodd"/>
+        </symbol>
+    </svg>
+
+</body>
+</html>
