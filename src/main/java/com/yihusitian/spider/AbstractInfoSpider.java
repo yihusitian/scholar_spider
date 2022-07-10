@@ -4,6 +4,8 @@ import com.yihusitian.Controller;
 import com.yihusitian.abstracts.AbstractAdaptor;
 import com.yihusitian.abstracts.AbstractAdaptorManager;
 import com.yihusitian.bean.ArticleInfo;
+import com.yihusitian.util.SleepUtil;
+
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -43,6 +45,7 @@ public class AbstractInfoSpider implements Callable<Map<String, String>> {
         if (Objects.isNull(abstractAdaptor)) {
             return "暂未适配该网站数据抓取";
         }
+        SleepUtil.sleepRandomSeconds(2, 5);
         return abstractAdaptor.getAbstractInfo(href);
     }
 

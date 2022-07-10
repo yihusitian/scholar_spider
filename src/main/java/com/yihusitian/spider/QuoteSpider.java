@@ -5,7 +5,7 @@ import cn.hutool.core.util.CharsetUtil;
 import cn.hutool.core.util.StrUtil;
 import com.yihusitian.Controller;
 import com.yihusitian.bean.ArticleInfo;
-import com.yihusitian.util.HttpRequestUtil;
+import com.yihusitian.util.HttpsRequestUtil;
 import com.yihusitian.util.SleepUtil;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -28,7 +28,20 @@ public class QuoteSpider implements Callable<Map<String, ArticleInfo>> {
     private static final String QUOTE_URL_TEMPLATE = "https://scholar.google.com/scholar?q=info:%s:scholar.google.com/&output=cite&scirp=1&hl=zh-CN";
 
     private static final Map<String, String> HEADERS = new HashMap<String, String >() {{
-        this.put("user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36");
+        this.put("authority","scholar.google.com");
+        this.put("accept","*/*");
+        this.put("accept-language","zh-CN,zh;q=0.9");
+        this.put("cookie","CONSENT=YES+AE.zh-CN+20180429-14-0; ANID=AHWqTUmUca29_XCMSFI6Uov14lF7BMnyKVNpYPM3UqkGC01V8oOGOMoJl-tmTus7; SEARCH_SAMESITE=CgQI55UB; SID=MAgZYTxRjS7RiL1Vz4s0qwmhwa_4F7YYwERm_T9u76SDR76IsRmK1xO6C50bP9lF_bG5TA.; __Secure-1PSID=MAgZYTxRjS7RiL1Vz4s0qwmhwa_4F7YYwERm_T9u76SDR76Iw8BSGf5C1zwY_fjYALrEyQ.; __Secure-3PSID=MAgZYTxRjS7RiL1Vz4s0qwmhwa_4F7YYwERm_T9u76SDR76IfxQyn1oSRO5Gf6YD68k1AQ.; HSID=A9HO-cZp4HYVPFUbN; SSID=AWlDDtd-oRBMff_ZX; APISID=WRKMqM6Zs0lskhuV/AbzNT6JiLuzsbwYLj; SAPISID=7kHWHSwn9LyR8zJK/AeM09kM3Mpbi6QiK5; __Secure-1PAPISID=7kHWHSwn9LyR8zJK/AeM09kM3Mpbi6QiK5; __Secure-3PAPISID=7kHWHSwn9LyR8zJK/AeM09kM3Mpbi6QiK5; 1P_JAR=2022-07-09-14; AEC=AakniGPRg-n32x56KEAQ8QNMYBz2AiXEp1bGhE40IyH78QABw1ysPNz2RhQ; NID=511=qWIG2ad653MlxwWIvQGOe3QG0nW7FYLT0fLFyzqYhO3-QN8vXtWPb8z3kLfA5LzSTPg4m9M-LkhL8Hvh2dOuyO9kToH8FzrM_7yRb9Y5yc9-cMS0ieC-unQt3S49_sP_7Wm8C8nYUl-bL7N_RrRc-Ahi1Wl_1KCxY-gUuUqpWcDffB0yxDiu0rcGQFYgIES_oxm6-fJtVSQW1Oc6tt0d8SeDgh_FauEzhQDAg2yeP3D2WrMlZjxZUl9lnmWLAk7kwhs9r1R7gukr43rQB6sD5X1NDo16IvuSq8xQ8BlwMlcfsnuWUwljolp4K-aYmRXLsHKvCRMIzMcHIiuYy0QzBD7494I; GSP=IN=8b9a455bd1c58d67:LD=zh-CN:A=SmWP-Q:CPTS=1657437234:LM=1657437234:S=HzVrx8heSPBHdDN3; SIDCC=AJi4QfHJDIJ_6CMEjx1uy0YRt4-jZCUDgKjqBDqk6M9p6EHRG3fEF1tcZ30DGs3WYPghGHDr-g; __Secure-1PSIDCC=AJi4QfEDnu-zLwBERL0zu6RIEKJBgmDyUwzxSq6w8iY0K4G6fYnBDXaaPR2IG13QS21W3eT_kQ; __Secure-3PSIDCC=AJi4QfEOdp1sHQw0bG6zP1pr0wdFjwBkUwOpNEJkYikr1HikegPZ-S7Onma7kRZXD7JFW4OJ_v0");
+        this.put("referer","https://scholar.google.com/scholar?q=master+doctor+depression+anxiety&hl=zh-CN&as_sdt=0,5");
+        this.put("sec-ch-ua","\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\"");
+        this.put("sec-ch-ua-mobile","?0");
+        this.put("sec-ch-ua-platform","macOS");
+        this.put("sec-fetch-dest","empty");
+        this.put("sec-fetch-mode","cors");
+        this.put("sec-fetch-site","same-origin");
+        this.put("user-agent","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36");
+        this.put("x-client-data","CLK1yQEIlbbJAQimtskBCMS2yQEIqZ3KAQjghcsBCJOhywEI2+/LAQjpucwBCLm6zAEI+brMAQiKu8wBGKupygE=");
+        this.put("x-requested-with","XHR");
     }};
 
     private String dirName;
@@ -143,10 +156,10 @@ public class QuoteSpider implements Callable<Map<String, ArticleInfo>> {
         if (StrUtil.isNotBlank(quoteHtmlContent)) {
             return quoteHtmlContent;
         }
-        SleepUtil.sleepRandomSeconds(1, 3);
+        SleepUtil.sleepRandomSeconds(3, 6);
         String quoteUrl = String.format(QUOTE_URL_TEMPLATE, itemId);
         print(String.format("开始爬取引用, qutoeUrl: %s", quoteUrl));
-        String result = HttpRequestUtil.executGetHttpRequest(quoteUrl, HEADERS);
+        String result = HttpsRequestUtil.doGet(quoteUrl, HEADERS);
         print(String.format("爬取引用完成, qutoeUrl: %s", quoteUrl));
         this.storeQuoteHtmlContent(result, itemId, pageNo);
         return result;
