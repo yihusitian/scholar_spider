@@ -3,13 +3,8 @@ package com.yihusitian.util;
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.StrUtil;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -68,7 +63,7 @@ public class URLConnectionUtil {
             conn.setInstanceFollowRedirects(false);
             conn.setDoInput(true);
             conn.setDoOutput(true);
-            conn.setRequestMethod("POST");
+            conn.setRequestMethod("GET");
         } catch (Exception e) {
             e.printStackTrace();
         }
