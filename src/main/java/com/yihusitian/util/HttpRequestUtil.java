@@ -19,7 +19,7 @@ public class HttpRequestUtil {
      * @return
      */
     public static HttpRequest buildGetHttpRequest(String url) {
-        return HttpRequest.get(url).timeout(-1);
+        return HttpRequest.get(url).timeout(10);
     }
 
     /**

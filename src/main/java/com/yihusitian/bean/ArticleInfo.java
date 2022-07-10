@@ -21,6 +21,8 @@ public class ArticleInfo {
     //id
     private String cid;
 
+    private int pageNo;
+
     //标题
     @Excel(name = "标题", orderNum = "0", width = 120)
     private String title;

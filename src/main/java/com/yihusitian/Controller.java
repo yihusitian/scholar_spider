@@ -90,16 +90,37 @@ public class Controller {
         searchButton.setDisable(true);
         String keyword = keywordText.getText().trim();
         try {
+            String keywordDownloadDir = this.getKeywordDownloadDir(keyword);
             this.setProcessInfo(String.format("开始执行检索任务, 搜索关键词为: %s , 请您耐心等待", keyword));
             SleepUtil.sleepRandomSeconds(1, 2);
-            GoogleScholarSpider googleScholarSpider = new GoogleScholarSpider(this, downloadDir, keyword);
-            googleScholarSpider.doSpiderJob();
-            this.setProcessInfo(String.format("检索任务完成, 请查看你的excel文件, 路径为: %s", downloadDir + StrUtil.SLASH + keyword));
+            GoogleScholarSpider googleScholarSpider = new GoogleScholarSpider(this, keywordDownloadDir, keyword);
+            googleScholarSpider.doSpider(keyword);
+            this.setProcessInfo(String.format("检索任务完成, 请查看你的excel文件, 路径为: %s", keywordDownloadDir));
         } catch (Exception e) {
             this.setProcessInfo("搜索过程中出错了，快来找人看看吧！");
         }
         searchButton.setDisable(false);
     }
+
+    /**
+     * 获取处理后的文件夹目录
+     *
+     * @param keyword
+     * @return
+     */
+    private String getKeywordDownloadDir(String keyword) {
+        return downloadDir + StrUtil.SLASH + keyword.trim().replaceAll("\\s+", "_")
+                .replaceAll("\\\\", "_")
+                .replaceAll("\\/", "_")
+                .replaceAll(":", "_")
+                .replaceAll("\\*", "_")
+                .replaceAll("\\?", "_")
+                .replaceAll("\"", "_")
+                .replaceAll("<", "_")
+                .replaceAll(">", "_")
+                .replaceAll("\\|", "_");
+    }
+
 
     /**
      * 输出进度信息
@@ -110,7 +131,6 @@ public class Controller {
         Platform.runLater(() -> {
             searchLabel.setText(content);
         });
-
     }
 
     /**
