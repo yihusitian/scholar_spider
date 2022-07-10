@@ -27,20 +27,28 @@ public class ArticleInfo {
     @Excel(name = "标题", orderNum = "0", width = 120)
     private String title;
 
-    //年份
-    @Excel(name = "年份", orderNum = "1", width = 20)
-    private String year;
-
-    //作者
-    @Excel(name = "作者", orderNum = "2", width = 100)
-    private String author;
-
-    //文献链接
-    @Excel(name = "文献链接", orderNum = "3", width = 150, isHyperlink = true)
-    private String linkUrl;
+    //标题
+    @Excel(name = "标题翻译", orderNum = "1", width = 120)
+    private String titleTrans;
 
     //摘要
-    @Excel(name = "摘要", orderNum = "4", width = 180)
+    @Excel(name = "摘要", orderNum = "2", width = 180)
     private String abstractInfo;
+
+    //摘要
+    @Excel(name = "摘要翻译", orderNum = "3", width = 180)
+    private String abstractInfoTrans;
+
+    //文献链接
+    @Excel(name = "文献链接", orderNum = "4", width = 150, isHyperlink = true)
+    private String linkUrl;
+
+    //作者
+    @Excel(name = "作者", orderNum = "5", width = 100)
+    private String author;
+
+    //年份
+    @Excel(name = "年份", orderNum = "6", width = 20)
+    private String year;
 
 }

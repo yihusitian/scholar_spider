@@ -1,5 +1,6 @@
 package com.yihusitian.util;
 
+import cn.hutool.core.util.StrUtil;
 import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONUtil;
 import org.apache.http.HttpEntity;
@@ -52,6 +53,9 @@ public class GoogleTranslate {
      */
     public static String translateEnglishToCn(String txt) {
         try {
+            if (StrUtil.isBlank(txt)) {
+                return txt;
+            }
             GoogleTranslate googleTranslate = GoogleTranslate.getInstance();
             String translateText = googleTranslate.translateText(txt, "auto", "zh_cn");
             return translateText;
@@ -69,6 +73,9 @@ public class GoogleTranslate {
      */
     public static String translateCnToEnglish(String txt) {
         try {
+            if (StrUtil.isBlank(txt)) {
+                return txt;
+            }
             GoogleTranslate googleTranslate = GoogleTranslate.getInstance();
             String translateText = googleTranslate.translateText(txt, "auto", "en");
             return translateText;

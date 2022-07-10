@@ -52,12 +52,12 @@ public class ArticleInfoExcelExportStyler extends AbstractExcelExportStyler impl
         cellStyle.setVerticalAlignment(VerticalAlignment.CENTER);
         font.setFontHeightInPoints((short) 12);
         if (Objects.nonNull(entity)) {
-            if (entity.getOrderNum() < 3) {
+            if (entity.getOrderNum() < 2 || entity.getOrderNum() > 4) {
                 font.setBold(true);
                 font.setFontHeightInPoints((short) 14);
             }
 
-            if (entity.getOrderNum() == 3) {
+            if (entity.getOrderNum() == 4) {
                 font.setColor(IndexedColors.BLUE.getIndex());
                 font.setUnderline((byte) 1);
             }

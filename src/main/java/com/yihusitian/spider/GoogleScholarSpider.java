@@ -6,7 +6,9 @@ import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.CharsetUtil;
+import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.StrUtil;
+import cn.hutool.crypto.SecureUtil;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.yihusitian.Controller;
@@ -14,6 +16,7 @@ import com.yihusitian.bean.ArticleInfo;
 import com.yihusitian.excel.ArticleInfoExcelDataHandler;
 import com.yihusitian.excel.ArticleInfoExcelExportStyler;
 import com.yihusitian.util.FileNameUtil;
+import com.yihusitian.util.GoogleTranslate;
 import com.yihusitian.util.HttpsRequestUtil;
 import com.yihusitian.util.SleepUtil;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -23,6 +26,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.File;
+import java.io.FileFilter;
 import java.io.FileOutputStream;
 import java.util.*;
 import java.util.concurrent.ExecutorService;
@@ -278,8 +282,148 @@ public class GoogleScholarSpider {
             }
             articleInfo.setAbstractInfo(abstractInfoMap.get(cid));
         });
+
+        controller.setProcessInfo("开始执行翻译任务...");
+        this.translateProcess(articleInfos);
         this.doExcelGenerate(articleInfos);
         controller.setProcessInfo("Excel文件整理完毕, 输出目录为: " + downloadDir);
+    }
+
+    /**
+     * 翻译处理
+     *
+     * @param articleInfos
+     */
+    private void translateProcess(List<ArticleInfo> articleInfos) {
+        Map<String, String> transDatabase = this.loadBatchTransContent();
+        List<String> contentList = Lists.newArrayList();
+        boolean isFinish = true;
+        for (ArticleInfo articleInfo : articleInfos) {
+            String title = articleInfo.getTitle();
+            if (StrUtil.isNotBlank(title) && !this.isChinese(title) && StrUtil.isBlank(articleInfo.getTitleTrans())) {
+                String transTitle = transDatabase.get(SecureUtil.md5(title));
+                if (StrUtil.isBlank(transTitle)) {
+                    contentList.add(title);
+                    isFinish = false;
+                } else {
+                    articleInfo.setTitleTrans(transTitle);
+                }
+            }
+            String abstractInfo = articleInfo.getAbstractInfo();
+            if (StrUtil.isNotBlank(abstractInfo) && !this.isChinese(abstractInfo) && StrUtil.isBlank(articleInfo.getAbstractInfoTrans())) {
+                String transAbstractInfo = transDatabase.get(SecureUtil.md5(abstractInfo));
+                if (StrUtil.isBlank(transAbstractInfo)) {
+                    contentList.add(abstractInfo);
+                    isFinish = false;
+                } else {
+                    articleInfo.setAbstractInfoTrans(transAbstractInfo);
+                }
+            }
+        }
+        if (isFinish) {
+            return;
+        }
+        List<List<String>> partitionList = Lists.partition(contentList, 20);
+        for (List<String> listItem : partitionList) {
+           String spitId = IdUtil.getSnowflake().nextIdStr();
+           String content = CollUtil.join(listItem, spitId);
+           String transContent = GoogleTranslate.translateEnglishToCn(content);
+           System.out.println("翻译结果: " + transContent);
+           SleepUtil.sleepRandomSeconds(3, 5);
+           Map<String, String> transMap = this.batchStoreTransResult(content, transContent, spitId);
+           transDatabase.putAll(transMap);
+        }
+        this.translateProcess(articleInfos);
+    }
+
+    private static final String TRANS_SPILT = "::::::::";
+
+    /**
+     * 批量加载翻译信息
+     *
+     * @return
+     */
+    private Map<String, String> loadBatchTransContent() {
+        String transDir = downloadDir + "/transresult";
+        File dir = new File(transDir);
+        File[] transFiles = dir.listFiles(new FileFilter() {
+            @Override
+            public boolean accept(File file) {
+                return file.getName().endsWith(".txt") && file.getName().startsWith("bigtrans_");
+            }
+        });
+        Map<String, String> result = Maps.newHashMap();
+        for (File item : transFiles) {
+           List<String> lines = FileUtil.readLines(item, CharsetUtil.UTF_8);
+           for (String line : lines) {
+               String[] parts = line.split(TRANS_SPILT);
+               result.put(parts[0], parts[1]);
+           }
+        }
+        return result;
+    }
+
+    /**
+     * 存储转换后的结果
+     *
+     * @param content
+     * @param transContent
+     * @param spiltId
+     * @return
+     */
+    private Map<String, String> batchStoreTransResult(String content, String transContent, String spiltId) {
+        Map<String, String> result = Maps.newHashMap();
+        List<String> lines = Lists.newArrayList();
+        String[] parts = content.split(spiltId);
+        String[] transParts = transContent.split(spiltId);
+        if (parts.length == transParts.length) {
+            for (int i = 0; i < parts.length; i++) {
+                String itemContent = parts[i];
+                String itemTransContent = transParts[i];
+                String md5Code = SecureUtil.md5(itemContent);
+                lines.add(md5Code + TRANS_SPILT + itemTransContent);
+                result.put(md5Code, itemContent);
+            }
+        }
+        File file = new File(String.format("%s/transresult/bigtrans_%s.txt", downloadDir, IdUtil.randomUUID()));
+        FileUtil.writeUtf8Lines(lines, file);
+        return result;
+    }
+
+//    public static void main(String[] args) {
+//        String id = IdUtil.getSnowflake().nextIdStr();
+//        String content = "Distinguishing types of social withdrawal in children: Internalizing and externalizing outcomes of conflicted shyness versus social disinterest across childhood. Journal of research in personality, 67, 27-35.::::::::Little research has examined the effect of subtypes of social withdrawal on the development of psychopathology across childhood.::::::::Social withdrawal and gender differences: Clinical phenotypes and biological bases. Journal of Neuroscience Research.::::::::Quality of life assessment in MND: development of a Social Withdrawal Scale. Journal of the neurological sciences, 169(1-2), 26-34.";
+//        List<String> list = StrUtil.split(content, TRANS_SPILT);
+//        String str = CollUtil.join(list, String.valueOf(id));
+//        System.out.println();
+//        String result = GoogleTranslate.translateEnglishToCn(str    );
+//        List<String> list1 = StrUtil.split(result, id);
+//        System.out.println(list1);
+//    }
+
+
+    /**
+     * 判断是否为中文
+     *
+     * @param content
+     * @return
+     */
+    private boolean isChinese(String content) {
+        if (StrUtil.isBlank(content)) {
+            return false;
+        }
+        String str = content;
+        if (content.length() > 2) {
+            str = content.substring(0, 2);
+        }
+        String regex = "[\u4e00-\u9fa5]";
+        char[] chs = str.toCharArray();
+        for (char ch : chs) {
+            if (!String.valueOf(ch).matches(regex)) {
+                return false;
+            }
+        }
+        return true;
     }
 
 }
