@@ -1,16 +1,14 @@
 package com.yihusitian;
 
 import cn.hutool.core.util.StrUtil;
-import com.sun.org.apache.bcel.internal.generic.NEW;
 import com.yihusitian.spider.GoogleScholarSpider;
+import com.yihusitian.util.FileNameUtil;
 import com.yihusitian.util.SleepUtil;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.DirectoryChooser;
-import javafx.stage.FileChooser;
 
 import java.io.File;
 import java.util.Optional;
@@ -109,16 +107,7 @@ public class Controller {
      * @return
      */
     private String getKeywordDownloadDir(String keyword) {
-        return downloadDir + StrUtil.SLASH + keyword.trim().replaceAll("\\s+", "_")
-                .replaceAll("\\\\", "_")
-                .replaceAll("\\/", "_")
-                .replaceAll(":", "_")
-                .replaceAll("\\*", "_")
-                .replaceAll("\\?", "_")
-                .replaceAll("\"", "_")
-                .replaceAll("<", "_")
-                .replaceAll(">", "_")
-                .replaceAll("\\|", "_");
+        return downloadDir + StrUtil.SLASH + FileNameUtil.handle(keyword);
     }
 
 

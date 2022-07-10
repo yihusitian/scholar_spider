@@ -13,6 +13,7 @@ import com.yihusitian.Controller;
 import com.yihusitian.bean.ArticleInfo;
 import com.yihusitian.excel.ArticleInfoExcelDataHandler;
 import com.yihusitian.excel.ArticleInfoExcelExportStyler;
+import com.yihusitian.util.FileNameUtil;
 import com.yihusitian.util.HttpsRequestUtil;
 import com.yihusitian.util.SleepUtil;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -53,7 +54,6 @@ public class GoogleScholarSpider {
 
     private static final String SEARCH_URL = SITE_URL + "/scholar?hl=zh-CN&as_sdt=0,5&q=";
 
-    //一个关键字最多抓取前10页，后面的参考价值也不大了
     private static final int LIMIT_PAGE = 15;
 
     private static final Map<String, String> HEADERS = new HashMap<String, String >() {{
@@ -199,6 +199,13 @@ public class GoogleScholarSpider {
         return downloadDir + StrUtil.SLASH + String.format("page_%s.html", pageNo);
     }
 
+    /**
+     * 获取下一个页面的链接
+     *
+     * @param currentPageNo
+     * @param htmlContent
+     * @return
+     */
     private String getNextPageHref(int currentPageNo, String htmlContent) {
         int nextPageNO = currentPageNo + 1;
         Document document = Jsoup.parse(htmlContent);
@@ -215,14 +222,19 @@ public class GoogleScholarSpider {
         return null;
     }
 
-    //生成Excel
+    /**
+     * 生成Excel
+     *
+     * @param articleInfos
+     */
     private void doExcelGenerate(List<ArticleInfo> articleInfos) {
         if (CollUtil.isEmpty(articleInfos)) {
             return;
         }
         try {
             articleInfos = articleInfos.stream().filter(item -> StrUtil.isNotEmpty(item.getTitle())).collect(Collectors.toList());
-            File excelFile = new File(downloadDir + StrUtil.SLASH + "result.xlsx");
+            String xlsxFileName = String.format("%s/%s.xlsx", downloadDir, FileNameUtil.handle(keyword));
+            File excelFile = new File(xlsxFileName);
             ExportParams exportParams = new ExportParams();
             exportParams.setDataHandler(new ArticleInfoExcelDataHandler());
             exportParams.setStyle(ArticleInfoExcelExportStyler.class);
@@ -236,6 +248,12 @@ public class GoogleScholarSpider {
         }
     }
 
+    /**
+     * 执行爬取任务
+     *
+     * @param keyword
+     * @throws Exception
+     */
     public void doSpider(String keyword) throws Exception{
         controller.setProcessInfo("开始执行关键字爬取任务, 请耐心等待...");
         List<ArticleInfo> articleInfos = this.doSearch(keyword);
